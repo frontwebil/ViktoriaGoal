@@ -1,6 +1,6 @@
 // POP START
 
-const openPopUp = document.getElementById("open_pop_up");
+const openPopUp = document.querySelectorAll(".open_pop_up")[0];
 const closePopUp = document.getElementById("close_pop_up");
 const popUp = document.getElementById("pop_up");
 const popUpEnd = document.getElementById("pop_up_end");
@@ -8,10 +8,15 @@ const popUpEnd = document.getElementById("pop_up_end");
 console.log(openPopUp);
 console.log(closePopUp);
 console.log(popUp);
+
 openPopUp.onclick = function (e) {
   e.preventDefault();
   popUp.classList.add("active");
 };
+
+// openPopUp.addEventListener('click', () => {
+//   popUp.classList.add("active");
+// });
 
 closePopUp.onclick = function () {
   popUp.classList.remove("active");
