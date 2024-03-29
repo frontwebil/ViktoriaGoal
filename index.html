@@ -1,465 +1,607 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="anim.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="media.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="anim.css">
-  <link rel="stylesheet" href="main.css" />
-  <link rel="stylesheet" href="reset.css" />
-  <link rel="stylesheet" href="media.css">
+    <script src="main.js" defer></script>
+  </head>
 
-  <script src="main.js" defer></script>
+  <body id="home">
+    <div class="pop_up" id="pop_up">
+      <div class="pop_up_container">
+        <div class="pop_up_body">
+          <div class="container-pop">
+            <div class="pop_up_top">
+              <p class="Pop-top-text">ПОДАТЬ ЗАЯВКУ</p>
+              <div style="cursor: pointer" id="close_pop_up">
+                <img src="icon/X.svg" alt="" />
+              </div>
+            </div>
+            <p class="pop-up-p-info">
+              Подайте заявку и получите быстрый ответ от автора
+            </p>
 
-</head>
-
-<body id="home">
-
-
-
-  <div class="pop_up" id="pop_up">
-    <div class="pop_up_container">
-      <div class="pop_up_body">
-        <div class="container-pop">
-          <div class="pop_up_top">
-            <p class="Pop-top-text">ПОДАТЬ ЗАЯВКУ</p>
-            <div style="cursor: pointer" id="close_pop_up">
-              <img src="icon/X.svg" alt="" />
+            <div class="form">
+              <p class="form-text">Имя</p>
+              <input type="text" class="input" id="name" />
+              <p class="form-text">E-mail</p>
+              <input type="text" class="input" id="gmail" />
+              <!-- <a
+                class="button"
+                href="#"
+                id="Submit_letter"
+                onclick="getValue()"
+                style="max-width: 350px; padding: 18px 100px"
+                >ПОДАТЬ ЗАЯВКУ</a
+              > -->
+              <a
+                href="#"
+                id="Submit_letter"
+                onclick="getValue()"
+              >
+                <button class="redirect-button" style="margin-top: 10px;">
+                  <p class="redirect-button-text">ПОДАТЬ ЗАЯВКУ</p>
+                </button>
+              </a>
             </div>
           </div>
-          <p class="pop-up-p-info">Подайте заявку и получите быстрый ответ от автора</p>
-
-          <form action="" class="form">
-            <p class="form-text">Имя</p>
-            <input type="text" class="input" id="name" />
-            <p class="form-text">E-mail</p>
-            <input type="text" class="input" id="gmail" />
-            <a class="button" href="#" id="Submit_letter" onclick="getValue()"
-              style="max-width: 350px;padding: 18px 100px;">ПОДАТЬ ЗАЯВКУ</a>
-          </form>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="pop_up_end" id="pop_up_end">
-    <div class="pop_up_container">
-      <div class="pop_up_body">
-        <div class="container-pop" style="padding-bottom: 100px;">
-          <h3 class="pop-end-h">СПАСИБО!</h3>
-          <p class="pop-end-p">Ваша заявка была отправлена<br>
-            Ожидайте ответ от автора</p>
-          <a class="button-end" href="index.html" id="Submit_letter"">НА ГЛАВНЫЙ ЭКРАН</a>
+    <div class="pop_up_end" id="pop_up_end">
+      <div class="pop_up_container">
+        <div class="pop_up_body">
+          <div class="container-pop" style="padding-bottom: 100px">
+            <h3 class="pop-end-h">СПАСИБО!</h3>
+            <p class="pop-end-p">
+              Ваша заявка была отправлена<br />
+              Ожидайте ответ от автора
+            </p>
+            <a href="index.html">
+              <button class="redirect-button">
+                <p class="redirect-button-text">НА ГЛАВНЫЙ ЭКРАН</p>
+              </button>
+            </a>
           </div>
         </div>
       </div>
     </div>
 
-    <div class=" all">
-            <div class="main-container">
-
-              <div class="header">
-                <div class="header-bottom">
-                  <a href="#" id="burger-open"><img src="icon/List.svg" alt="" /></a>
-                  <div class="header-bottom-right">
-                    <img src="icon/Vector.svg" alt="" />
-                    <div class="header-bottom-right-column">
-                      <h3 class="header-text">УЮТНЫЙ БЛОГ</h3>
-                      <p class="header-p">В INSTAGRAM</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="menu" id="menu">
-                <div class="main-container">
-                  <div class="header" style="background-image: none;background-color: #141414;">
-
-                    <div class="header-bottom">
-                      <a href="#home" id="burger-close"><img src="icon/Xc.svg" alt="" /></a>
-                      <div class="header-bottom-right">
-                        <img src="icon/Vector.svg" alt="" />
-                        <div class="header-bottom-right-column">
-                          <h3 class="header-text">УЮТНЫЙ БЛОГ</h3>
-                          <p class="header-p">В INSTAGRAM</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="header-menu">
-
-                    <div class="wrap-top">
-                      <a href="#" class="adress">
-                        <div class="text-menu">
-                          <h3 class="header-menu-wrap-h">ЗАРАБОТОК В <br>
-                            СОЦ. СЕТЯХ</h3>
-                          <img src="icon/ArrowUp.svg" alt="">
-
-                        </div>
-                      </a>
-                      <p class="header-menu-wrap-p">Продвижение Наставничество Курсы</p>
-                    </div>
-
-                    <div class="wrap-psych">
-                      <h3 class="wrap-psych-h">ПСИХОЛОГИЯ</h3>
-                      <img src="icon/Brain.svg" alt="">
-                    </div>
-
-                    <div class="menu-column">
-
-                      <a href="#about">
-                        <div class="column-item">
-                          <p class="column-item-text">ОБО МНЕ</p>
-                        </div>
-                      </a>
-
-                      <a href="#request">
-                        <div class="column-item">
-                          <p class="column-item-text">ЗАПРОСЫ С КОТОРЫМИ РАБОТАЮ</p>
-                        </div>
-                      </a>
-
-                      <a href="">
-                        <div class="column-item">
-                          <p class="column-item-text">УСЛУГИ</p>
-                        </div>
-                      </a>
-
-                      <a href="">
-                        <div class="column-item">
-                          <p class="column-item-text">ОНЛАЙН ПРОДУКТЫ</p>
-                        </div>
-                      </a>
-
-                      <a href="">
-                        <div class="column-item">
-                          <p class="column-item-text">ВАЖНЫЕ ВОПРОСЫ</p>
-                        </div>
-                      </a>
-
-                      <a href="">
-                        <div class="column-item">
-                          <p class="column-item-text">ОТЗЫВЫ</p>
-                        </div>
-                      </a>
-
-                      <a href="">
-                        <div class="column-item">
-                          <p class="column-item-text">КОНТАКТЫ</p>
-                        </div>
-                      </a>
-
-                      <a href="">
-                        <div class="column-item" style="border-bottom: 1px #F6F5F5 solid;">
-                          <p class="column-item-text">СТАТЬИ</p>
-                        </div>
-                      </a>
-
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="container-vik">
-                <section class="viktoria">
-                  <div class="vik-top">
-                    <p class="vik-top-text">ПСИХОЛОГ</p>
-                    <p class="vik-top-text">КОУЧ</p>
-                    <p class="vik-top-text" style="border-right: 0">НАСТАВНИК</p>
-                  </div>
-                  <h1 class="vik-title leftToRight">
-                    ВИКТОРИЯ <br />
-                    ГОАЛ
-                  </h1>
-                  <div class="vik-bottom">
-                    <p class="bottom-vik-text">
-                      Я — психолог, business-woman, автор онлайн продуктов, провожу
-                      обучения по личному бренду и заработку в соц сетях.
-                    </p>
-                    <a href="" class="button-modal" id="open_pop_up">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</a>
-                  </div>
-                </section>
-              </div>
-
-              <section class="bio">
-                <div class="container-bio">
-                  <div class="line-top">
-                    <img src="icon/left.svg" alt="" />
-                    <img src="icon/center.svg" alt="" />
-                    <img src="icon/right.svg" alt="" />
-                  </div>
-
-                  <div class="bio-cards">
-
-                    <a href="" class="margin-bio-cards">
-                      <div class="bio-card leftToRight" style="background-image: url(img/bio1.jpg)">
-                        <div class="bio-card-text">
-                          <h3 class="card-bio-top">МНЕ НУЖЕН ПСИХОЛОГ</h3>
-                          <h4 class="card-bio-bot">Личная работа со мной</h4>
-                        </div>
-                      </div>
-                    </a>
-
-                    <a href="" class="margin-bio-cards">
-                      <div class="bio-card rightToLeft" style="background-image: url(img/bio2.jpg)">
-                        <div class="bio-card-text">
-                          <h3 class="card-bio-top">ПОДОБРАТЬ ПСИХОЛОГА</h3>
-                          <h4 class="card-bio-bot">С моей команды профессионалов</h4>
-                        </div>
-                      </div>
-                    </a>
-
-                    <a href="" class="margin-bio-cards">
-                      <div class="bio-card leftToRight" style="background-image: url(img/bio3.jpg)">
-                        <div class="bio-card-text">
-                          <h3 class="card-bio-top">
-                            ХОЧУ ЗАРАБАТЫВАТЬ С <br />
-                            СОЦ. СЕТЕЙ
-                          </h3>
-                          <h4 class="card-bio-bot">Научи</h4>
-                        </div>
-                      </div>
-                    </a>
-
-                    <a href="" class="margin-bio-cards">
-                      <div class="bio-card rightToLeft" style="background-image: url(img/bio4.jpg)">
-                        <div class="bio-card-text">
-                          <h3 class="card-bio-top">ХОЧУ НА ВЕБИНАР:</h3>
-                          <h4 class="card-bio-bot">«Колесо баланса»</h4>
-                        </div>
-                      </div>
-                    </a>
-
-                    <a href="" class="margin-bio-cards">
-                      <div class="bio-card leftToRight" style="background-image: url(img/bio5.jpg)">
-                        <div class="bio-card-text">
-                          <h3 class="card-bio-top">ХОЧУ НА ИНТЕНСИВ:</h3>
-                          <h4 class="card-bio-bot">
-                            «Взрослая позиция. Успех в <br />
-                            деньгах, жизни и отношениях»
-                          </h4>
-                        </div>
-                      </div>
-                    </a>
-
-                    <a href="" class="margin-bio-cards">
-                      <div class="bio-card rightToLeft" style="background-image: url(img/bio6.jpg)">
-                        <div class="bio-card-text">
-                          <h3 class="card-bio-top">
-                            ХОЧУ НА ПРЕМИАЛЬНОЕ<br />
-                            ОБУЧЕНИЕ
-                          </h3>
-                          <h4 class="card-bio-bot">
-                            «Заменяющий год<br />
-                            психотерапии»
-                          </h4>
-                        </div>
-                      </div>
-                    </a>
-
-                    <a href="" class="margin-bio-cards">
-                      <div class="bio-card leftToRight" style="background-image: url(img/bio7.jpg)">
-                        <div class="bio-card-text">
-                          <h3 class="card-bio-top">ХОЧУ НА НАСТАВНИЧЕСТВО</h3>
-                          <h4 class="card-bio-bot">
-                            Зарабатывать с соцсетей выйти<br />
-                            на доход икс два и достичь всех<br />
-                            своих целей
-                          </h4>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="line-bot" id="about">
-                    <img src="icon/left.svg" alt="" />
-                    <img src="icon/center.svg" alt="" />
-                    <img src="icon/right.svg" alt="" />
-                  </div>
-                </div>
-              </section>
-
-              <section class="about">
-                <div class="container-about">
-                  <div class="about-top">
-                    <h3 class="about-text leftToRight">ОБО МНЕ</h3>
-                    <img src="icon/vect.svg" alt="" />
-                  </div>
-
-                  <div class="blocks">
-                    <div class="block blight">
-                      <img src="icon/book.svg" alt="" />
-                      <div class="block-wrap">
-                        <h3 class="block-wrap-h">5 лет в психологии</h3>
-                        <p class="block-wrap-p">
-                          и ни разу не выгорала от своего дела
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="block blight">
-                      <img src="icon/UsersFour.svg" alt="" />
-                      <div class="block-wrap">
-                        <h3 class="block-wrap-h">Набрала команду психологов</h3>
-                        <p class="block-wrap-p">и подбираю под вас</p>
-                      </div>
-                    </div>
-
-                    <div class="block blight">
-                      <img src="icon/HandHeart.svg" alt="" />
-                      <div class="block-wrap">
-                        <h3 class="block-wrap-h">Психологический центр</h3>
-                        <p class="block-wrap-p">Открыла свой психологический центр</p>
-                      </div>
-                    </div>
-
-                    <div class="block blight">
-                      <img src="icon/Star.svg" alt="" />
-                      <div class="block-wrap">
-                        <h3 class="block-wrap-h">Сотни успешных клиентов</h3>
-                        <p class="block-wrap-p">по всему миру</p>
-                      </div>
-                    </div>
-
-                    <div class="block blight">
-                      <img src="icon/CurrencyEur.svg" alt="" />
-                      <div class="block-wrap">
-                        <h3 class="block-wrap-h">Более 50.000€</h3>
-                        <p class="block-wrap-p">заработала с соц. сетей</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="wrap-about" style="margin-bottom: 20px;">
-                    <div class="wrap-about-left">
-                      <div class="wrap-text">
-                        <img src="icon/Ellipse 4.svg" alt="" class="wrap-text-img">
-                        <p style="color: black;">Вложила в свое<br> обучение более<br> 20.000€</p>
-                      </div>
-
-                      <div class="wrap-text">
-                        <img src="icon/Ellipse 4.svg" alt="" class="wrap-text-img">
-                        <p style="color: black;">Изучала психологию<br> в университетах<br> Европы и СНГ и<br> затем
-                          поступаю в<br>
-                          Канаду.</p>
-                      </div>
-
-                      <div class="wrap-text">
-                        <img src="icon/Ellipse 4.svg" alt="" class="wrap-text-img">
-                        <p style="color: black;">Ведущая офлайн<br> лекций по <br> психологии.</p>
-                      </div>
-                    </div>
-
-                    <div class="wrap-about-right">
-                      <img src="img/right.jpg" alt="" style="object-fit: cover;width: 100%" class="about-img">
-                    </div>
-                  </div>
-
-                  <div class="wrap-about" style="padding-bottom: 60px;">
-
-                    <div class="wrap-about-right">
-                      <img src="img/left.jpg" alt="" style="object-fit: cover;width: 191px;" class="about-img">
-                    </div>
-
-                    <div class="wrap-about-left">
-                      <div class="wrap-text">
-                        <img src="icon/Ellipse 4.svg" alt="" class="wrap-text-img">
-                        <p style="color: black;">Я полностью<br> отказалась от<br> алкоголя, курения,<br> сладкого,
-                          вредной<br> еды и живу в<br> здоровом теле. </p>
-                      </div>
-
-                      <div class="wrap-text">
-                        <img src="icon/Ellipse 4.svg" alt="" class="wrap-text-img">
-                        <p style="color: black;">Посетила более 20+<br> стран и во многих<br> жила: Швейцария,<br>
-                          Испания, Бали,<br> Малайзия, Таиланд,<br> Словакия, Польша.</p>
-                      </div>
-
-                      <div class="wrap-text" id="request">
-                        <img src="icon/Ellipse 4.svg" alt="" class="wrap-text-img">
-                        <p style="color: black;">Говорю на 6-ти<br> языках.</p>
-                      </div>
-                    </div>
-
-                  </div>
-
-                </div>
-              </section>
-
-              <section class="request">
-                <div class="container-request">
-
-                  <h2 class="request-top-h leftToRight">ЗАПРОСЫ</h2>
-                  <p class="request-top-p rightToLeft">С КОТОРЫМИ Я РАБОТАЮ</p>
-
-                  <div class="photos-request">
-                    <div class="left-request">
-
-                      <div class="card-request leftToRight" style="background-image: url(img/left1.jpg);"></div>
-                      <div class="card-request leftToRight" style="background-image: url(img/left2.jpg);"></div>
-                      <div class="card-request leftToRight" style="background-image: url(img/left3.jpg);"></div>
-                      <div class="card-request leftToRight" style="background-image: url(img/left4.jpg);"></div>
-
-
-                    </div>
-
-                    <div class="right-request">
-                      <div class="card-request rightToLeft" style="background-image: url(img/right1.jpg);"></div>
-                      <div class="card-request rightToLeft" style="background-image: url(img/right2.jpg);"></div>
-                      <div class="card-request rightToLeft" style="background-image: url(img/right3.jpg);"></div>
-
-                    </div>
-                  </div>
-                </div>
-
-              </section>
-
-              <section class="with-me">
-                <div class="container-with-me">
-                  <div class="with-me-title">
-                    <h2 class="with-me-title-h leftToRight">ПСИХОТЕРАПИЯ<br>
-                      СО МНОЙ</h2>
-                  </div>
-
-                  <div class="with-me-cards">
-
-                    <div class="with-me-card blight">
-                      <img src="icon-black/HandHeart.svg" alt="" class="with-me-card-img">
-                      <p class="with-me-card-text">Это только про эффективность и результат.</p>
-                    </div>
-
-
-
-                    <div class="with-me-card blight">
-                      <img src="icon-black/Brain.svg" alt="" class="with-me-card-img">
-                      <p class="with-me-card-text">В корне отличается от 90% психологов, потому что, я работаю на то,
-                        чтобы поменять вашу картину мира, в комплексной работе, мы перезаписываем ваши нейронные сети
-                        полностью, а не точечно убираем какие то травмы.</p>
-                    </div>
-
-
-
-                    <div class="with-me-card blight">
-                      <img src="icon-black/Lightning.svg" alt="" class="with-me-card-img">
-                      <p class="with-me-card-text">Ваши первые изменения уже после первой сессии. </p>
-                    </div>
-
-                  </div>
-
-                  <div class="with-me-wrap-imgs">
-                    <div class="with-me-wrap-img-left"></div>
-                    <div class="with-me-wrap-img-right"></div>
-                  </div>
-
-                </div>
-              </section>
+    <!-- <div class=" all"> -->
+    <div class="main-container">
+      <header class="header">
+        <div class="header-bottom">
+          <a href="#" id="burger-open"><img src="icon/List.svg" alt="" /></a>
+          <div class="header-bottom-right">
+            <img src="icon/Vector.svg" alt="" />
+            <div class="header-bottom-right-column">
+              <h3 class="header-text">УЮТНЫЙ БЛОГ</h3>
+              <p class="header-p">В INSTAGRAM</p>
             </div>
+          </div>
         </div>
-</body>
+      </header>
 
+      <div class="menu" id="menu">
+        <div class="main-container">
+          <div
+            class="header"
+            style="background-image: none; background-color: #141414"
+          >
+            <div class="header-bottom">
+              <a href="#home" id="burger-close"
+                ><img src="icon/Xc.svg" alt=""
+              /></a>
+              <div class="header-bottom-right">
+                <img src="icon/Vector.svg" alt="" />
+                <div class="header-bottom-right-column">
+                  <h3 class="header-text">УЮТНЫЙ БЛОГ</h3>
+                  <p class="header-p">В INSTAGRAM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="header-menu">
+            <div class="wrap-top">
+              <a href="#" class="adress">
+                <div class="text-menu">
+                  <h3 class="header-menu-wrap-h">
+                    ЗАРАБОТОК В <br />
+                    СОЦ. СЕТЯХ
+                  </h3>
+                  <img src="icon/ArrowUp.svg" alt="" />
+                </div>
+              </a>
+              <p class="header-menu-wrap-p">Продвижение Наставничество Курсы</p>
+            </div>
+
+            <div class="wrap-psych">
+              <h3 class="wrap-psych-h">ПСИХОЛОГИЯ</h3>
+              <img src="icon/Brain.svg" alt="" />
+            </div>
+
+            <div class="menu-column">
+              <a href="#about">
+                <div class="column-item">
+                  <p class="column-item-text">ОБО МНЕ</p>
+                </div>
+              </a>
+
+              <a href="#request">
+                <div class="column-item">
+                  <p class="column-item-text">ЗАПРОСЫ С КОТОРЫМИ РАБОТАЮ</p>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="column-item">
+                  <p class="column-item-text">УСЛУГИ</p>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="column-item">
+                  <p class="column-item-text">ОНЛАЙН ПРОДУКТЫ</p>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="column-item">
+                  <p class="column-item-text">ВАЖНЫЕ ВОПРОСЫ</p>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="column-item">
+                  <p class="column-item-text">ОТЗЫВЫ</p>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="column-item">
+                  <p class="column-item-text">КОНТАКТЫ</p>
+                </div>
+              </a>
+
+              <a href="">
+                <div
+                  class="column-item"
+                  style="border-bottom: 1px #f6f5f5 solid"
+                >
+                  <p class="column-item-text">СТАТЬИ</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="container-vik">
+        <section class="viktoria">
+          <div class="vik-top">
+            <p class="vik-top-text">ПСИХОЛОГ</p>
+            <p class="vik-top-text">КОУЧ</p>
+            <p class="vik-top-text" style="border-right: 0">НАСТАВНИК</p>
+          </div>
+          <h1 class="vik-title leftToRight">
+            ВИКТОРИЯ <br />
+            ГОАЛ
+          </h1>
+          <div class="vik-bottom">
+            <p class="bottom-vik-text">
+              Я — психолог, business-woman, автор онлайн продуктов, провожу
+              обучения по личному бренду и заработку в соц сетях.
+            </p>
+            <!-- <a href="" class="button-modal" id="open_pop_up"
+              >ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</a
+            > -->
+
+            <a
+            href="#"
+            id="open_pop_up"
+            style="margin-bottom: 60px;"
+          >
+            <button class="redirect-button" style="margin-top: 10px;">
+              <p class="redirect-button-text">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</p>
+            </button>
+          </a>
+          </div>
+        </section>
+      </section>
+
+      <section class="bio">
+        <div class="container-bio">
+          <div class="line-top">
+            <img src="icon/left.svg" alt="" />
+            <img src="icon/center.svg" alt="" />
+            <img src="icon/right.svg" alt="" />
+          </div>
+
+          <div class="bio-cards">
+            <a href="" class="margin-bio-cards">
+              <div
+                class="bio-card leftToRight"
+                style="background-image: url(img/bio1.jpg)"
+              >
+                <div class="bio-card-text">
+                  <h3 class="card-bio-top">МНЕ НУЖЕН ПСИХОЛОГ</h3>
+                  <h4 class="card-bio-bot">Личная работа со мной</h4>
+                </div>
+              </div>
+            </a>
+
+            <a href="" class="margin-bio-cards">
+              <div
+                class="bio-card rightToLeft"
+                style="background-image: url(img/bio2.jpg)"
+              >
+                <div class="bio-card-text">
+                  <h3 class="card-bio-top">ПОДОБРАТЬ ПСИХОЛОГА</h3>
+                  <h4 class="card-bio-bot">С моей команды профессионалов</h4>
+                </div>
+              </div>
+            </a>
+
+            <a href="" class="margin-bio-cards">
+              <div
+                class="bio-card leftToRight"
+                style="background-image: url(img/bio3.jpg)"
+              >
+                <div class="bio-card-text">
+                  <h3 class="card-bio-top">
+                    ХОЧУ ЗАРАБАТЫВАТЬ С <br />
+                    СОЦ. СЕТЕЙ
+                  </h3>
+                  <h4 class="card-bio-bot">Научи</h4>
+                </div>
+              </div>
+            </a>
+
+            <a href="" class="margin-bio-cards">
+              <div
+                class="bio-card rightToLeft"
+                style="background-image: url(img/bio4.jpg)"
+              >
+                <div class="bio-card-text">
+                  <h3 class="card-bio-top">ХОЧУ НА ВЕБИНАР:</h3>
+                  <h4 class="card-bio-bot">«Колесо баланса»</h4>
+                </div>
+              </div>
+            </a>
+
+            <a href="" class="margin-bio-cards">
+              <div
+                class="bio-card leftToRight"
+                style="background-image: url(img/bio5.jpg)"
+              >
+                <div class="bio-card-text">
+                  <h3 class="card-bio-top">ХОЧУ НА ИНТЕНСИВ:</h3>
+                  <h4 class="card-bio-bot">
+                    «Взрослая позиция. Успех в <br />
+                    деньгах, жизни и отношениях»
+                  </h4>
+                </div>
+              </div>
+            </a>
+
+            <a href="" class="margin-bio-cards">
+              <div
+                class="bio-card rightToLeft"
+                style="background-image: url(img/bio6.jpg)"
+              >
+                <div class="bio-card-text">
+                  <h3 class="card-bio-top">
+                    ХОЧУ НА ПРЕМИАЛЬНОЕ<br />
+                    ОБУЧЕНИЕ
+                  </h3>
+                  <h4 class="card-bio-bot">
+                    «Заменяющий год<br />
+                    психотерапии»
+                  </h4>
+                </div>
+              </div>
+            </a>
+
+            <a href="" class="margin-bio-cards">
+              <div
+                class="bio-card leftToRight"
+                style="background-image: url(img/bio7.jpg)"
+              >
+                <div class="bio-card-text">
+                  <h3 class="card-bio-top">ХОЧУ НА НАСТАВНИЧЕСТВО</h3>
+                  <h4 class="card-bio-bot">
+                    Зарабатывать с соцсетей выйти<br />
+                    на доход икс два и достичь всех<br />
+                    своих целей
+                  </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="line-bot" id="about">
+            <img src="icon/left.svg" alt="" />
+            <img src="icon/center.svg" alt="" />
+            <img src="icon/right.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container-about">
+          <div class="about-top">
+            <h3 class="about-text leftToRight" style="z-index: 6;">ОБО МНЕ</h3>
+            
+            <!-- <div class="line-black"></div> -->
+            <img src="icon/vect.svg" alt="" />
+
+          </div>
+
+          <div class="blocks">
+            <div class="block blight">
+              <img src="icon/book.svg" alt="" />
+              <div class="block-wrap">
+                <h3 class="block-wrap-h">5 лет в психологии</h3>
+                <p class="block-wrap-p">и ни разу не выгорала от своего дела</p>
+              </div>
+            </div>
+
+            <div class="block blight">
+              <img src="icon/UsersFour.svg" alt="" />
+              <div class="block-wrap">
+                <h3 class="block-wrap-h">Набрала команду психологов</h3>
+                <p class="block-wrap-p">и подбираю под вас</p>
+              </div>
+            </div>
+
+            <div class="block blight">
+              <img src="icon/HandHeart.svg" alt="" />
+              <div class="block-wrap">
+                <h3 class="block-wrap-h">Психологический центр</h3>
+                <p class="block-wrap-p">Открыла свой психологический центр</p>
+              </div>
+            </div>
+
+            <div class="block blight">
+              <img src="icon/Star.svg" alt="" />
+              <div class="block-wrap">
+                <h3 class="block-wrap-h">Сотни успешных клиентов</h3>
+                <p class="block-wrap-p">по всему миру</p>
+              </div>
+            </div>
+
+            <div class="block blight">
+              <img src="icon/CurrencyEur.svg" alt="" />
+              <div class="block-wrap">
+                <h3 class="block-wrap-h">Более 50.000€</h3>
+                <p class="block-wrap-p">заработала с соц. сетей</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrap-about" style="margin-bottom: 20px">
+            <div class="wrap-about-left">
+              <div class="wrap-text">
+                <img src="icon/Ellipse4.svg" alt="" class="wrap-text-img" />
+                <p style="color: black">
+                  Вложила в свое<br />
+                  обучение более<br />
+                  20.000€
+                </p>
+              </div>
+
+              <div class="wrap-text">
+                <img src="icon/Ellipse4.svg" alt="" class="wrap-text-img" />
+                <p style="color: black">
+                  Изучала психологию<br />
+                  в университетах<br />
+                  Европы и СНГ и<br />
+                  затем поступаю в<br />
+                  Канаду.
+                </p>
+              </div>
+
+              <div class="wrap-text">
+                <img src="icon/Ellipse4.svg" alt="" class="wrap-text-img" />
+                <p style="color: black">
+                  Ведущая офлайн<br />
+                  лекций по <br />
+                  психологии.
+                </p>
+              </div>
+            </div>
+
+            <div class="wrap-about-right">
+              <img
+                src="img/right.jpg"
+                alt=""
+                style="object-fit: cover; width: 100%"
+                class="about-img"
+              />
+            </div>
+          </div>
+
+          <div class="wrap-about" style="padding-bottom: 60px">
+            <div class="wrap-about-right">
+              <img
+                src="img/left.jpg"
+                alt=""
+                style="object-fit: cover; width: 191px"
+                class="about-img"
+              />
+            </div>
+
+            <div class="wrap-about-left">
+              <div class="wrap-text">
+                <img src="icon/Ellipse4.svg" alt="" class="wrap-text-img" />
+                <p style="color: black">
+                  Я полностью<br />
+                  отказалась от<br />
+                  алкоголя, курения,<br />
+                  сладкого, вредной<br />
+                  еды и живу в<br />
+                  здоровом теле.
+                </p>
+              </div>
+
+              <div class="wrap-text">
+                <img src="icon/Ellipse4.svg" alt="" class="wrap-text-img" />
+                <p style="color: black">
+                  Посетила более 20+<br />
+                  стран и во многих<br />
+                  жила: Швейцария,<br />
+                  Испания, Бали,<br />
+                  Малайзия, Таиланд,<br />
+                  Словакия, Польша.
+                </p>
+              </div>
+
+              <div class="wrap-text" id="request">
+                <img src="icon/Ellipse4.svg" alt="" class="wrap-text-img" />
+                <p style="color: black">
+                  Говорю на 6-ти<br />
+                  языках.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="request">
+        <div class="container-request">
+          <h2 class="request-top-h leftToRight">ЗАПРОСЫ</h2>
+          <p class="request-top-p rightToLeft">С КОТОРЫМИ Я РАБОТАЮ</p>
+
+          <div class="photos-request">
+            <div class="left-request">
+              <div
+                class="card-request leftToRight"
+                style="background-image: url(img/left1.jpg)"
+              ></div>
+              <div
+                class="card-request leftToRight"
+                style="background-image: url(img/left2.jpg)"
+              ></div>
+              <div
+                class="card-request leftToRight"
+                style="background-image: url(img/left3.jpg)"
+              ></div>
+              <div
+                class="card-request leftToRight"
+                style="background-image: url(img/left4.jpg)"
+              ></div>
+            </div>
+
+            <div class="right-request">
+              <div
+                class="card-request rightToLeft"
+                style="background-image: url(img/right1.jpg)"
+              ></div>
+              <div
+                class="card-request rightToLeft"
+                style="background-image: url(img/right2.jpg)"
+              ></div>
+              <div
+                class="card-request rightToLeft"
+                style="background-image: url(img/right3.jpg)"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="with-me">
+        <div class="container-with-me">
+          <div class="with-me-title">
+            <h2 class="with-me-title-h leftToRight">
+              ПСИХОТЕРАПИЯ<br />
+              СО МНОЙ
+            </h2>
+          </div>
+
+          <div class="with-me-cards">
+            <div class="with-me-card blight">
+              <img
+                src="icon-black/HandHeart.svg"
+                alt=""
+                class="with-me-card-img"
+              />
+              <p class="with-me-card-text">
+                Это только про эффективность и результат.
+              </p>
+            </div>
+
+            <div class="with-me-card blight">
+              <img src="icon-black/Brain.svg" alt="" class="with-me-card-img" />
+              <p class="with-me-card-text">
+                В корне отличается от 90% психологов, потому что, я работаю на
+                то, чтобы поменять вашу картину мира, в комплексной работе, мы
+                перезаписываем ваши нейронные сети полностью, а не точечно
+                убираем какие то травмы.
+              </p>
+            </div>
+
+            <div class="with-me-card blight">
+              <img
+                src="icon-black/Lightning.svg"
+                alt=""
+                class="with-me-card-img"
+              />
+              <p class="with-me-card-text">
+                Ваши первые изменения уже после первой сессии.
+              </p>
+            </div>
+          </div>
+
+          <div class="with-me-wrap-imgs">
+            <div class="with-me-wrap-img-left"></div>
+            <div class="with-me-wrap-img-right"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <h2 class="services-header">
+          <span class="services-header-text">УСЛУГИ</span>
+          <img
+            src="icon/vector-grey.svg"
+            alt="line"
+            class="services-header-img"
+          />
+        </h2>
+
+        <div class="services-search">
+          <p class="services-search-text">
+            Подобрать психолога
+            <span class="underline-white">с моей команды</span>
+          </p>
+          <span class="services-search-price underline-white">от 20€</span>
+        </div>
+        <a
+          href="
+        https://www.instagram.com/viktoria_goal?igsh=aHpteHNqcW0zaGwy&utm_source=qr"
+          target="_blank"
+        >
+          <button class="redirect-button">
+            <p class="redirect-button-text">НАЙТИ СПЕЦИАЛИСТА</p>
+          </button>
+        </a>
+      </section>
+    </div>
+    <!-- </div> -->
+  </body>
 </html>
