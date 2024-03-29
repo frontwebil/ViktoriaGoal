@@ -498,7 +498,7 @@ body {
 
 .wrap-about {
   display: flex;
-  justify-content: space-between;
+  gap: 16px;
 }
 
 .wrap-text {
@@ -516,6 +516,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.wrap-about-right{
+  background-image: url(img/right.jpg);
+  width: 45%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Request */
