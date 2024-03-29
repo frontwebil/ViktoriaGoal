@@ -186,7 +186,7 @@ body {
   box-sizing: border-box;
   height: 100%;
   background: #141414;
-  z-index: 4;
+  z-index: 3;
 
 }
 
@@ -267,7 +267,7 @@ body {
   overflow-x: clip;
 }
 .header {
-  z-index: 3;
+  z-index: 1;
   position: fixed;
 
   max-width: 430px;
