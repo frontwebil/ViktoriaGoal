@@ -724,7 +724,7 @@ body {
   margin-bottom: 14px;
 }
 
-.services-block-first {
+.services-block {
   padding: 20px 12px 20px 12px;
   border: 1px #f6f5f5 solid;
 }
@@ -761,4 +761,12 @@ body {
   font-weight: 600;
   color: #F6F5F5;
 
+}
+
+
+.services-block-second-title{
+  font-size: 16px;
+  font-weight: 500;
+  max-width: 370px;
+  margin-bottom: 20px;
 }
