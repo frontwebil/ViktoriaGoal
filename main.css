@@ -269,12 +269,15 @@ body {
 .header {
   z-index: 3;
   position: fixed;
+
   max-width: 430px;
   width: 100%;
   top: 0;
+
   background-image: url(img/header.png);
   background-repeat: no-repeat;
   background-size: cover;
+
   opacity: 0.99;
   border-bottom: 1px solid rgb(246, 245, 245);
 }
@@ -283,12 +286,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   max-width: 410px;
-  padding-left: 10px;
-  padding-right: 10px;
+
   margin: 0 auto;
-  padding-top: 45px;
-  padding-bottom: 15px;
+  padding: 45px 10px 15px 10px;
 }
 
 .header-bottom-right {
@@ -521,8 +523,7 @@ body {
 }
 
 .container-request {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10px;
   max-width: 420px;
   margin: 0 auto;
 }
