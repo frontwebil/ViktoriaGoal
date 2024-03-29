@@ -17,15 +17,20 @@ html {
 }
 
 body {
+  background-image: url(img/bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
   font-family: "Montserrat", sans-serif;
   color: #f6f5f5;
 }
 
 .all {
-  background-image: url(img/bg.png);
+  /* background-image: url(img/bg.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 
 /* POP */
@@ -320,7 +325,8 @@ body {
 }
 
 .container-vik {
-  padding-top: 95px;
+  /*  */
+  margin-top: 95px;
   background-image: url(img/viktoria.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -574,3 +580,81 @@ body {
   font-family: MakSemiBold;
   padding-bottom: 20px;
 }
+
+
+/* Psycho */
+
+.with-me {
+  background-color: #F6F5F5;
+
+}
+.container-with-me {
+  max-width: 420px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+.with-me-title {
+
+}
+.with-me-title-h {
+  color: #141414;
+  font-family: MakSemiBold;
+  font-size: 42px;
+  font-weight: 400;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.with-me-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 16px;
+}
+.with-me-card {
+  padding: 14px;
+  border: 1px solid #141414;  
+  display: flex;
+  border-radius: 2px;
+}
+
+.with-me-card-img{
+  margin-right: 10px;
+  height: 32px;
+}
+.with-me-card-text {
+  font-size: 16px;
+  color: #141414;
+  font-weight: 500;
+  max-width: 330px;
+}
+
+.with-me-wrap-imgs{
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  max-width: 400px;
+  padding-bottom: 60px;
+}
+
+.with-me-wrap-img-left{
+  background-image: url(img/with-me-left.jpg);
+  width: 192px;
+  height: 280px;
+  object-fit:cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.with-me-wrap-img-right{
+  background-image: url(img/with-me-right.jpg);
+  width: 192px;
+  height: 280px;
+  object-fit:cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+

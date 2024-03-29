@@ -52,6 +52,23 @@ const options = {
   threshold: [0.5],
 };
 
+const blight = new IntersectionObserver(blightFunc, options);
+
+const blightEl = document.querySelectorAll(".blight");
+
+for (const element of blightEl) {
+  blight.observe(element);
+}
+
+function blightFunc(entries) {
+  entries.forEach((change) => {
+    if (change.isIntersecting) {
+      change.target.classList.add("func");
+    }
+  });
+}
+
+
 const leftToRight = new IntersectionObserver(fromLeftToRight, options);
 
 const leftToRightEl = document.querySelectorAll(".leftToRight");

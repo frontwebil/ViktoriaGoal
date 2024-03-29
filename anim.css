@@ -7,6 +7,13 @@
   transition: all 1.2s ease 0s;
 }
 
+.leftToRight.func {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+
+
 .rightToLeft {
   overflow: hidden;
   transform: translate(+50%, 0);
@@ -21,7 +28,16 @@
   transform: translate(0, 0);
 }
 
-.leftToRight.func {
-  opacity: 1;
-  transform: translate(0, 0);
+
+
+
+.blight {
+  opacity: 0;
+  transition: all 1.5s ease 0s;
+
 }
+
+.blight.func{
+  opacity: 1;
+}
+
