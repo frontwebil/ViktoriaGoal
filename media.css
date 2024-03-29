@@ -1,0 +1,55 @@
+@media only screen and (max-width: 400px) {
+  .vik-title {
+    font-size: 50px;
+  }
+
+  .button-modal {
+    padding: 18px 10%;
+    font-size: 12px;
+  }
+
+  .card-bio-top {
+    font-size: 18px;
+  }
+
+  .card-bio-bot {
+    font-size: 16px;
+  }
+
+  .wrap-about {
+    margin-left: 10px;
+    align-items: center;
+  }
+
+  .wrap-text{
+    font-size: 14px;
+  }
+
+  .about-img{
+    max-width: 90%;
+  }
+
+  .card-request{
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 365px){
+  .input {
+    background-color: #d9d9d9;
+    max-width: 350px;
+    /* margin: 0 auto; */
+    color: black;
+    margin-bottom: 8px;
+    padding: 14px 35px;
+}
+.form {
+  align-items: center;
+}
+
+#Submit_letter{
+  max-width: 350px;
+  padding: 18px 60px;
+}
+}

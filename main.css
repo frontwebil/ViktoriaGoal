@@ -1,0 +1,575 @@
+@font-face {
+  font-family: MakSemiBold;
+  src: url("fonts/MakSemiBoldHigh/font.woff") format("woff"),
+    url("fonts/MakSemiBoldHigh/font.woff2") format("woff2");
+  /* Add additional src declarations for different font file formats if necessary */
+}
+
+@font-face {
+  font-family: MakExtraBold;
+  src: url("fonts/MakExtraBold/font.woff") format("woff"),
+    url("fonts/MakExtraBold/font.woff2") format("woff2");
+  /* Add additional src declarations for different font file formats if necessary */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #f6f5f5;
+}
+
+.all {
+  background-image: url(img/header.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* POOOOOP */
+.pop_up {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 2;
+}
+
+.pop_up_end {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 2;
+}
+
+.pop_up.active {
+  display: block;
+}
+
+.pop_up_end.active {
+  display: block;
+}
+
+.pop-end-h {
+  font-size: 32px;
+  font-family: MakExtraBold;
+  align-items: center;
+  text-align: center;
+  padding-top: 101px;
+  color: #892b28;
+}
+.pop-end-p {
+  font-size: 16px;
+  text-align: center;
+  align-items: center;
+  font-weight: 400;
+  color: #141414;
+  padding-bottom: 50px;
+}
+.button-end {
+  margin-left: 10px;
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #f6f5f5;
+  padding: 18px 95px;
+  background-color: #892b28;
+  white-space: nowrap;
+}
+
+.pop_up_container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.container-pop {
+  max-width: 370px;
+  margin: 0 auto;
+}
+
+.pop_up_top {
+  padding-top: 14px;
+  display: flex;
+}
+
+.pop_up_body {
+  margin: auto;
+  width: 400px;
+  background-color: #f6f5f5;
+  /* text-align: center; */
+  position: relative;
+}
+
+.Pop-top-text {
+  color: #892b28;
+  font-size: 24px;
+  font-family: MakExtraBold;
+}
+
+.pop_up_top {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 10px;
+}
+
+
+.button {
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #f6f5f5;
+  padding: 18px 120px;
+  background-color: #892b28;
+  white-space: nowrap;
+}
+
+.button:hover {
+  background-color: #ac322e;
+}
+
+.input {
+  background-color: #d9d9d9;
+  max-width: 350px;
+  /* margin: 0 auto; */
+  color: black;
+  margin-bottom: 8px;
+  padding: 14px 16px;
+}
+
+.pop-up-p-info {
+  color: #606060;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.form-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #141414;
+}
+
+/* POOOOP END */
+/* MEnu */
+.menu {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  transform: translateY(-180%);
+  transition: transform 400ms;
+  box-sizing: border-box;
+  height: 100%;
+  background: #141414;
+  z-index: 4;
+
+}
+
+.menu.active {
+  overflow-y: scroll;
+  opacity: 1;
+  transition: transform 400ms;
+  transform: translateY(0%);
+
+}
+
+.header-menu-wrap-h {
+  font-family: MakExtraBold;
+  color: #f6f5f5;
+  font-size: 26px;
+  /* padding-top: 30px; */
+}
+.header-menu-wrap-p {
+  font-size: 16px;
+  color: #f6f5f5;
+}
+
+.text-menu {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrap-top {
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 420px;
+  margin: 0 auto;
+  padding-top: 75px;
+}
+
+.wrap-psych {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 420px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px #f6f5f5 solid;
+}
+.wrap-psych-h {
+  font-size: 26px;
+  font-family: MakExtraBold;
+}
+
+.column-item {
+  max-width: 400px;
+  margin: 0 auto;
+  border-bottom: 1px #4a4a4a solid;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #f6f5f5;
+}
+.column-item-text {
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+.header-menu {
+  margin-bottom: 20px;
+}
+
+/* MEnu END*/
+
+/* HEader */
+.main-container {
+  max-width: 430px;
+  margin: 0 auto;
+  overflow-x: clip;
+}
+.header {
+  z-index: 3;
+  position: fixed;
+  max-width: 430px;
+  width: 100%;
+  top: 0;
+  background-image: url(img/header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.99;
+  border-bottom: 1px solid rgb(246, 245, 245);
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 410px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 15px;
+}
+
+.header-bottom-right {
+  display: flex;
+  gap: 5px;
+}
+
+.header-text {
+  color: #f6f5f5;
+  font-weight: 400;
+  font-size: 16px;
+}
+.header-p {
+  color: #f6f5f5;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+/* Header ENd */
+
+/* Viktoria */
+.viktoria {
+  max-width: 410px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
+.container-vik {
+  padding-top: 95px;
+  background-image: url(img/viktoria.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.vik-top {
+  padding-top: 20px;
+  display: flex;
+  gap: 8px;
+}
+.vik-top-text {
+  /* font-family: MakSemiBold; */
+  border-right: 1px white solid;
+  font-weight: 400;
+  padding-right: 10px;
+}
+
+.vik-title {
+  font-family: MakSemiBold;
+  font-size: 72px;
+  font-weight: 400;
+  padding-bottom: 406px;
+}
+
+.vik-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bottom-vik-text {
+  font-size: 18px;
+  font-weight: 300;
+}
+.button-modal {
+  color: #f6f5f5;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 18px 45px;
+  background-color: #892b28;
+  white-space: nowrap;
+  margin-bottom: 60px;
+}
+
+.button-modal:hover {
+  background-color: #ac322e;
+}
+
+/* Viktoria End */
+
+/* BIO */
+.bio {
+  background-color: #f6f5f5;
+}
+
+.container-bio {
+  max-width: 390px;
+  margin: 0 auto;
+}
+
+.line-top {
+  padding-top: 66px;
+  padding-bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.line-bot {
+  padding-top: 26px;
+  padding-bottom: 66px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.margin-bio-cards {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.bio-card {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 420px;
+  width: 100%;
+}
+
+.bio-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-bio-top {
+  color: #f6f5f5;
+  padding-top: 26px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-bio-bot {
+  color: #f6f5f5;
+  font-size: 18px;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+.bio-card-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  gap: 5px;
+}
+/* BIO END */
+
+/* About */
+.about {
+  background-color: #f6f5f5;
+}
+
+.about-text {
+  color: #141414;
+  font-family: MakSemiBold;
+  font-size: 42px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.container-about {
+  max-width: 390px;
+  margin: 0 auto;
+}
+
+.about-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-wrap-h {
+  color: #141414;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.block-wrap {
+  margin-left: 14px;
+}
+
+.block-wrap-p {
+  font-size: 16px;
+  color: #141414;
+  font-weight: 400;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px #cccccc solid;
+  padding-bottom: 14px;
+  margin-left: 10px;
+}
+
+.blocks {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-bottom: 20px;
+}
+
+.wrap-about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrap-text {
+  display: flex;
+}
+
+.wrap-text-img {
+  margin-top: 8px;
+  margin-right: 5px;
+  height: 4px;
+  width: 4px;
+}
+
+.wrap-about-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Request */
+
+.request {
+  background-image: url(img/REQUEST.jpg);
+}
+
+.container-request {
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.left-request {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 60px;
+}
+
+.right-request {
+  padding-top: 104px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-request {
+  width: 191px;
+  height: 191px;
+  background-color: #f6f5f5;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+.card-request-p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.request-top-h {
+  padding-top: 60px;
+  font-family: MakSemiBold;
+  font-size: 42px;
+  white-space: nowrap;
+}
+
+.photos-request {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.request-top-p {
+  font-size: 22px;
+  font-family: MakSemiBold;
+  padding-bottom: 20px;
+}

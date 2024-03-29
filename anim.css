@@ -1,0 +1,27 @@
+.leftToRight {
+  overflow: hidden;
+  white-space: nowrap;
+
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: all 1.2s ease 0s;
+}
+
+.rightToLeft {
+  overflow: hidden;
+  transform: translate(+50%, 0);
+  white-space: nowrap;
+
+  opacity: 0;
+  transition: all 1.2s ease 0s;
+}
+
+.rightToLeft.func {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.leftToRight.func {
+  opacity: 1;
+  transform: translate(0, 0);
+}
