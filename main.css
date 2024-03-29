@@ -453,13 +453,15 @@ body {
 }
 
 .container-about {
-  max-width: 390px;
-  margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
+
 }
 
 .about-top {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
 }
 
 .block-wrap-h {

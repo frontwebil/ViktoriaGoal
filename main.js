@@ -109,12 +109,40 @@ const menu = document.getElementById('menu');
 
 // BURGER
 
-openBurger.onclick = () => {
-  document.body.style.overflow = 'hidden';
-  menu.classList.add('active')
-};
+// openBurger.onclick = () => {
+//   // document.body.style.overflow = 'hidden';
+//   menu.classList.add('active')
+// };
 
-closeBurger.onclick = () => {
+// closeBurger.onclick = () => {
+//   // document.body.style.overflow = 'auto';
+//   menu.classList.remove('active')
+// };
+
+// const link = document.querySelector('.link')
+
+// link.onclick = () => {
+//   menu.classList.remove('active')
+// }
+
+
+openBurger.addEventListener('click', () => {
+  document.body.style.overflow = 'hidden';
+
+  menu.classList.add('active');
+});
+
+closeBurger.addEventListener('click', () => {
   document.body.style.overflow = 'auto';
-  menu.classList.remove('active')
-};
+
+  menu.classList.remove('active');
+});
+
+const menuLinks = document.querySelectorAll('.menu-link');
+
+menuLinks.forEach(link => link.addEventListener('click', () => {
+  console.log('asda')
+  document.body.style.overflow = 'auto';
+
+  menu.classList.remove('active');
+}));
