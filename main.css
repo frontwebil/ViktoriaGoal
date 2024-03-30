@@ -770,3 +770,207 @@ body {
   max-width: 370px;
   margin-bottom: 20px;
 }
+
+/* SERVICES END */
+
+/* My product */
+
+.my-product {
+  padding: 60px 13px;
+  background-color: #F6F5F5;
+}
+.my-product-title {
+  font-size: 42px;
+  color: #141414;
+  font-family: MakSemiBold;
+  max-width: 300px;
+}
+.my-product-title-info {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: #892B28;
+  font-weight: 600;
+  max-width: 400px;
+}
+.my-product-title-img {
+  background-image: url(img/my-product-title-img.jpg);
+  width: 100%;
+  height: 240px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.my-product-line{
+  height: 2px;
+
+  background-color: #892B28;
+
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  border-radius: 2px;
+}
+
+.my-product-vebinar-title {
+  display: flex;
+  justify-content: space-between;
+}
+.my-product-vebinar-title-left {
+  font-family: MakExtraBold;
+  font-size: 24px;
+  color: #141414;
+}
+.my-product-vebinar-title-left-span {
+  font-size: 18px;
+  color: #141414;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+.my-product-vebinar-title-right {
+  display: flex;
+  justify-content: space-between;
+  height: 24px;
+
+
+}
+.my-product-vebinar-title-right-price {
+  font-weight: 600;
+  font-size: 18px;
+  color: #101616;
+}
+
+.my-product-vebinar-text{
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  max-width: 400px;
+  color: #141414;
+}
+
+.my-product-video{
+  margin-top: 20px;
+}
+
+.my-product-read-more-link {
+  background-image: url(img/read-more-tg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
+
+}
+.my-product-read-more-link-text {
+  padding: 26px 15px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #F6F5F5;
+}
+
+.my-product-read-more-what{
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #141414;
+}
+
+.list-two-columns{
+  padding-left: 15px;
+  display: flex;
+  gap: 35px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.column-li {
+  max-width: 165px;
+  font-size: 14px;
+  color: #892B28;
+  list-style-type: disc;
+}
+
+.column-li-text{
+  max-width: 180px;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+}
+
+.tariffs{
+  margin-top: 20px;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #141414;
+}
+
+.tariffs-info {
+  margin-bottom: 11px;
+  display: flex;
+  justify-content: space-between;
+}
+.tariffs-info-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #141414;
+}
+.tariffs-info-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #141414;
+}
+
+/* End my product */
+
+
+/* Pack meditation */
+
+.pack-meditation {
+  padding: 60px 13px;
+  background-color: #141414;
+}
+.pack-meditation-title {
+  display: flex;
+  justify-content: space-between;
+
+}
+.pack-meditation-title-text {
+  font-family: MakSemiBold;
+  font-size: 24px;
+  color: #D9D9D9;
+}
+.pack-meditation-title-price {
+  font-size: 20px;
+  font-weight: 600;
+  color: #D9D9D9;
+
+}
+
+.pack-meditation-text{
+  max-width: 328px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 3px;
+  color: #D9D9D9;
+
+}
+
+.pack-meditation-under-text{
+  font-size: 16px;
+  font-weight: 400;
+  color: #D9D9D9;
+}
+
+.pack-meditation-listen-title{
+  color: #D9D9D9;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* END Pack meditation */

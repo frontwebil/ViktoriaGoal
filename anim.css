@@ -1,6 +1,6 @@
 .leftToRight {
   overflow: hidden;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 
   transform: translate(-50%, 0);
   opacity: 0;
