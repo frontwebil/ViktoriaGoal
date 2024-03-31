@@ -29,6 +29,7 @@ body {
 /* POP */
 .pop_up {
   display: none;
+  opacity: 0;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -50,6 +51,8 @@ body {
 }
 
 .pop_up.active {
+  opacity: 1;
+
   display: block;
 }
 
@@ -175,7 +178,7 @@ body {
 }
 
 /* POP END */
-/* Menu */
+/*Burger Menu */
 .menu {
   position: fixed;
   opacity: 0;
@@ -697,6 +700,8 @@ body {
 }
 
 .redirect-button {
+  cursor: pointer;
+
   margin-top: 40px;
   width: 100%;
   background-color: rgba(137, 43, 40, 1);
@@ -751,20 +756,29 @@ body {
   gap: 35px;
 }
 .services-block-first-column {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 16px; */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  column-gap: 30px;
+  row-gap: 5px;
 }
+
 .services-block-first-column-text {
   max-width: 165px;
   font-size: 14px;
-  font-weight: 600;
-  color: #F6F5F5;
-
+  font-weight: 300;
+  color: #f6f5f5;
 }
 
+.services-block-first-column-text b {
+  font-weight: 600;
+}
 
-.services-block-second-title{
+.services-block-second-title {
   font-size: 16px;
   font-weight: 500;
   max-width: 370px;
@@ -777,7 +791,7 @@ body {
 
 .my-product {
   padding: 60px 13px;
-  background-color: #F6F5F5;
+  background-color: #f6f5f5;
 }
 .my-product-title {
   font-size: 42px;
@@ -789,7 +803,7 @@ body {
   margin-top: 16px;
   margin-bottom: 16px;
   font-size: 18px;
-  color: #892B28;
+  color: #892b28;
   font-weight: 600;
   max-width: 400px;
 }
@@ -802,10 +816,10 @@ body {
   background-size: cover;
 }
 
-.my-product-line{
+.my-product-line {
   height: 2px;
 
-  background-color: #892B28;
+  background-color: #892b28;
 
   margin-top: 60px;
   margin-bottom: 60px;
@@ -832,8 +846,6 @@ body {
   display: flex;
   justify-content: space-between;
   height: 24px;
-
-
 }
 .my-product-vebinar-title-right-price {
   font-weight: 600;
@@ -841,15 +853,16 @@ body {
   color: #101616;
 }
 
-.my-product-vebinar-text{
+.my-product-vebinar-text {
   margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 18px;
   font-weight: 700;
   max-width: 400px;
   color: #141414;
 }
 
-.my-product-video{
+.my-product-video {
   margin-top: 20px;
 }
 
@@ -860,49 +873,54 @@ body {
   background-repeat: no-repeat;
   object-fit: cover;
   width: 100%;
-
+  margin-top: 20px;
 }
 .my-product-read-more-link-text {
   padding: 26px 15px;
   font-weight: 600;
   font-size: 16px;
-  color: #F6F5F5;
+  color: #f6f5f5;
 }
 
-.my-product-read-more-what{
+.my-product-read-more-what {
   margin-top: 20px;
   font-size: 18px;
   font-weight: 600;
   color: #141414;
 }
 
-.list-two-columns{
+.list-two-columns {
   padding-left: 15px;
   display: flex;
   gap: 35px;
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  column-gap: 30px;
+  row-gap: 10px;
+}
+
+.columns b {
+  font-weight: 600;
 }
 
 .column-li {
-  max-width: 165px;
   font-size: 14px;
-  color: #892B28;
+  color: #892b28;
   list-style-type: disc;
 }
 
-.column-li-text{
+.column-li-text {
   max-width: 180px;
   font-size: 14px;
   font-weight: 500;
   color: black;
 }
 
-.tariffs{
+.tariffs {
   margin-top: 20px;
   margin-bottom: 16px;
   font-size: 20px;
@@ -928,7 +946,6 @@ body {
 
 /* End my product */
 
-
 /* Pack meditation */
 
 .pack-meditation {
@@ -938,39 +955,227 @@ body {
 .pack-meditation-title {
   display: flex;
   justify-content: space-between;
-
 }
 .pack-meditation-title-text {
   font-family: MakSemiBold;
   font-size: 24px;
-  color: #D9D9D9;
+  color: #d9d9d9;
 }
 .pack-meditation-title-price {
   font-size: 20px;
   font-weight: 600;
-  color: #D9D9D9;
-
+  color: #d9d9d9;
 }
 
-.pack-meditation-text{
+.pack-meditation-text {
   max-width: 328px;
   font-size: 18px;
   font-weight: 500;
   margin-top: 3px;
-  color: #D9D9D9;
-
+  color: #d9d9d9;
 }
 
-.pack-meditation-under-text{
+.pack-meditation-under-text {
   font-size: 16px;
   font-weight: 400;
-  color: #D9D9D9;
+  color: #d9d9d9;
 }
 
-.pack-meditation-listen-title{
-  color: #D9D9D9;
+.pack-meditation-listen-title {
+  color: #d9d9d9;
   font-size: 18px;
   font-weight: 600;
 }
 
+.pack-meditation-names-meditations-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.pack-meditation-names-meditations-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #d9d9d9;
+}
+
+.pack-meditation-list-with-names {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.pack-meditation-item-name {
+  display: flex;
+  gap: 8px;
+  /* align-items: center; */
+}
+.pack-meditation-item-number {
+  font-size: 20px;
+  font-weight: 600;
+  color: #606060;
+}
+.pack-meditation-item-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #d9d9d9;
+  /* margin-left: 10px */
+}
+
 /* END Pack meditation */
+
+/* Audio */
+
+.audioPlayer {
+  margin-top: 20px;
+  border-radius: 2px;
+  padding: 14px;
+  background-color: #4a4a4a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.audioPlayerMain {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.audioPlayerMainLeft {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.audioPlayerImage {
+  border-radius: 2px;
+}
+
+.audioPlayerMainLeftTitle {
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 3px;
+}
+.audioPlayerMainLeftText {
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 13px;
+}
+
+.progress-stamp {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  gap: 5px;
+  align-items: center;
+}
+
+.progress-container {
+  position: relative;
+  height: 4px;
+  max-width: 226px;
+  width: 100%;
+  background-color: #f6f5f5;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.progress {
+  height: 4px;
+  width: 0px;
+  background-color: #892b28;
+}
+.audioPlayerMainRight {
+  cursor: pointer;
+}
+
+.pack-meditation-list-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #d9d9d9;
+}
+
+/* END AUDIO */
+
+/* Drop Down */
+
+.drop_down_card {
+  margin-top: 20px;
+  background-color: #f6f5f5;
+  padding: 16px;
+}
+
+.drop_down_card-img {
+  background-image: url(drop-down/hand.jpg);
+  width: 100%;
+  height: 170px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.drop_down_card-title {
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #141414;
+}
+.drop_down_card-text {
+  margin-top: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #606060;
+}
+.drop_down_card-button {
+  cursor: pointer;
+  padding-bottom: 3px;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #141414;
+  width: 100%;
+  text-align: right;
+  border-bottom: 1px #141414 solid;
+}
+
+.drop_down_card-button-bot {
+  cursor: pointer;
+  padding-bottom: 3px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #141414;
+  width: 100%;
+  text-align: right;
+  border-bottom: 1px #141414 solid;
+}
+
+.drop_down_card-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.drop_down_card-content-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #141414;
+  margin-top: 16px;
+  /* margin-bottom: 16px; */
+}
+
+.drop_down_card-li {
+  margin: 16px 0;
+  color: #141414;
+  list-style-type: disc;
+  margin-left: 20px;
+
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.drop_down_card-li::marker {
+  color: #606060;
+  width: 4px;
+  height: 4px;
+}
+
+/* END drop down */
