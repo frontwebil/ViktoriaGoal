@@ -292,7 +292,7 @@ body {
   max-width: 410px;
 
   margin: 0 auto;
-  padding: 45px 10px 15px 10px;
+  padding: 35px 10px 15px 10px;
 }
 
 .header-bottom-right {
@@ -1240,7 +1240,7 @@ body {
 
 /* This curse */
 
-.this-course-for-you{
+.this-course-for-you {
   padding: 0px 14px;
   background-color: #141414;
   background-image: url(img/thisCourseForYou.png);
@@ -1265,5 +1265,92 @@ body {
   margin-bottom: 30px;
 }
 
-
 /* END This curse */
+
+/* Way */
+
+.way-personality {
+  padding: 30px 14px;
+  background-color: #141414;
+}
+.way-personality-title {
+  font-size: 24px;
+  font-family: MakSemiBold;
+  margin-bottom: 16px;
+}
+
+.way-personality-video {
+  /* width: 400px; */
+  border: 1px white solid;
+  width: 100%;
+}
+
+.row-line-white {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.way-personality-program {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.meditation{
+font-size: 16px;
+font-weight: 600;
+color: #f6f5f5;
+margin-top: 10px;
+}
+
+.way-personality-course-menu{
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.way-personality-course-menu-block {
+  border: 1px #F6F5F5 solid;
+  padding: 14px;
+}
+.way-personality-course-menu-block-title {
+font-size: 20px;
+font-weight: 500;
+
+}
+.way-personality-course-menu-block-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+  margin-left: 15px;
+  margin-bottom: 23px;
+
+}
+.way-personality-course-menu-block-list-item {
+font-size: 14px;
+font-weight: 400;
+color: #F6F5F5;
+list-style: disc;
+
+}
+
+.way-personality-course-menu-block-list-item::marker{
+  color: #892B28;
+}
+.way-personality-course-menu-block-bottom {
+  display: flex;justify-content: space-between;
+}
+.way-personality-course-menu-block-bottom-text {
+font-size: 20px;
+font-weight: 700;
+
+}
+.way-personality-course-menu-block-bottom-price {
+font-size: 20px;
+font-weight: 700;
+text-decoration: underline;
+}
+/* END WAY */

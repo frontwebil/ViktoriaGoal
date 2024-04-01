@@ -241,13 +241,38 @@ AccordeonTopButton.forEach((el) => {
   el.addEventListener("click", () => {
     const content = el.nextElementSibling;
     const img = el.lastElementChild;
+    const number = el.firstElementChild.firstElementChild;
+    console.log(number)
 
     if (content.style.maxHeight) {
       img.src = "./icon/Plus.svg";
       content.style.maxHeight = null;
+      number.style.color = '#606060'
     } else {
       img.src = "./icon/minus.svg";
+      number.style.color = '#141414'
 
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+});
+
+const AccordeonTopButtonWhite = document.querySelectorAll(".accordeon-top-button-white");
+
+AccordeonTopButtonWhite.forEach((el) => {
+  el.addEventListener("click", () => {
+    const content = el.nextElementSibling;
+    const img = el.lastElementChild;
+    const number = el.firstElementChild.firstElementChild;
+
+    if (content.style.maxHeight) {
+      img.src = "./icon/Plus-white.svg";
+      content.style.maxHeight = null;
+      number.style.color = '#606060'
+
+    } else {
+      img.src = "./icon/minus-white.svg";
+      number.style.color = '#F6F5F5'
       content.style.maxHeight = content.scrollHeight + "px";
     }
   });
