@@ -269,7 +269,7 @@ body {
   overflow-x: clip;
 }
 .header {
-  z-index: 1;
+  z-index: 2;
   position: fixed;
 
   max-width: 430px;
@@ -920,8 +920,6 @@ body {
   color: black;
 }
 
-
-
 /* End my product */
 
 /* Pack meditation */
@@ -1074,8 +1072,6 @@ body {
 
 /* END AUDIO */
 
-
-
 /* Intensiv */
 
 .intensiv {
@@ -1137,5 +1133,137 @@ body {
   background-color: #141414;
 }
 
-
 /* END Intensiv */
+
+/* premium-product*/
+.premium-product {
+  padding: 60px 16px;
+  background-color: #141414;
+}
+.premium-product-grey-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #606060;
+}
+.premium-product-title {
+  margin-top: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #f6f5f5;
+}
+.line-white {
+  margin-top: 20px;
+  height: 1px;
+  width: 80px;
+  background-color: #f6f5f5;
+}
+.premium-product-main-text {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #f6f5f5;
+}
+
+.premium-product-list-withimg {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.premium-product-list-withimg-left-list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  z-index: 1;
+}
+.premium-product-list-withimg-left-list-row {
+  display: flex;
+  gap: 7px;
+}
+.premium-product-list-withimg-left-list-number {
+  width: 25px;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+.premium-product-list-withimg-left-list-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #f6f5f5;
+}
+
+.premium-product-list-withimg-photo {
+  max-width: 280px;
+  width: 100%;
+  max-height: 342px;
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  z-index: 0;
+}
+/* END premium-product*/
+
+/* Premium product cards */
+
+.premium-product-info {
+  padding: 60px 16px;
+  background-color: #141414;
+  background-image: url(img/frame-bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.premium-product-info-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+}
+.premium-product-info-card {
+  padding: 0 14px;
+  border: 1px #d9d9d9 solid;
+  border-radius: 1px;
+}
+.premium-product-info-card-title {
+  padding-top: 40px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.premium-product-info-card-text {
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 16px;
+}
+
+/* End Premium product cards */
+
+/* This curse */
+
+.this-course-for-you{
+  padding: 0px 14px;
+  background-color: #141414;
+  background-image: url(img/thisCourseForYou.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.this-course-for-you-top {
+  justify-content: center;
+  text-align: center;
+}
+
+.this-course-for-you-text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.this-course-for-you-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+
+/* END This curse */

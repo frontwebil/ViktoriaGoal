@@ -33,6 +33,10 @@
     width: 150px;
     height: 150px;
   }
+
+  .premium-product-list-withimg-photo{
+    opacity: 0.70;
+  }
 }
 
 @media only screen and (max-width: 365px){
