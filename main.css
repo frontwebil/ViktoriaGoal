@@ -1244,9 +1244,10 @@ body {
 
 .this-course-for-you {
   padding: 0px 14px;
-  background-color: #141414;
   background-image: url(img/thisCourseForYou.png);
+  background-color: #141414;
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
