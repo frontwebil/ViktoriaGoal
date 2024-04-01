@@ -185,7 +185,7 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  transform: translateY(-180%);
+  transform: translateY(-250%);
   transition: transform 400ms;
   box-sizing: border-box;
   height: 100%;
@@ -920,29 +920,7 @@ body {
   color: black;
 }
 
-.tariffs {
-  margin-top: 20px;
-  margin-bottom: 16px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #141414;
-}
 
-.tariffs-info {
-  margin-bottom: 11px;
-  display: flex;
-  justify-content: space-between;
-}
-.tariffs-info-text {
-  font-size: 18px;
-  font-weight: 500;
-  color: #141414;
-}
-.tariffs-info-price {
-  font-size: 20px;
-  font-weight: 700;
-  color: #141414;
-}
 
 /* End my product */
 
@@ -1096,86 +1074,68 @@ body {
 
 /* END AUDIO */
 
-/* Drop Down */
 
-.drop_down_card {
-  margin-top: 20px;
+
+/* Intensiv */
+
+.intensiv {
+  padding: 60px 16px;
   background-color: #f6f5f5;
-  padding: 16px;
 }
 
-.drop_down_card-img {
-  background-image: url(drop-down/hand.jpg);
+.intensiv-img {
+  background-image: url(img/intensiv-title.jpg);
   width: 100%;
-  height: 170px;
-  background-size: cover;
+  height: 240px;
   background-position: center;
-  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 60px;
 }
-
-.drop_down_card-title {
-  margin-top: 16px;
-  font-size: 18px;
-  font-weight: 600;
+.intensiv-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.intensiv-title-text {
+  font-family: MakSemiBold;
+  font-size: 24px;
   color: #141414;
 }
-.drop_down_card-text {
-  margin-top: 4px;
+.intensiv-title-price-row {
+  display: flex;
+  align-items: center;
+}
+.intensiv-title-price {
+  font-size: 20px;
+  font-weight: 600;
+  color: #101616;
+}
+
+.intensiv-text {
+  margin-top: 3px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #141414;
+}
+.intensiv-text-under {
   font-size: 16px;
   font-weight: 400;
-  color: #606060;
-}
-.drop_down_card-button {
-  cursor: pointer;
-  padding-bottom: 3px;
-  margin-top: 16px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #141414;
-  width: 100%;
-  text-align: right;
-  border-bottom: 1px #141414 solid;
+  color: #101616;
 }
 
-.drop_down_card-button-bot {
-  cursor: pointer;
-  padding-bottom: 3px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #141414;
-  width: 100%;
-  text-align: right;
-  border-bottom: 1px #141414 solid;
-}
-
-.drop_down_card-content {
-  overflow: hidden;
-  max-height: 0;
-  transition: 0.3s ease-in-out;
-}
-
-.drop_down_card-content-title {
+.intensiv-program-curse-title {
   font-size: 18px;
   font-weight: 600;
   color: #141414;
-  margin-top: 16px;
-  /* margin-bottom: 16px; */
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+.black-line {
+  height: 1px;
+  width: 100%;
+  background-color: #141414;
 }
 
-.drop_down_card-li {
-  margin: 16px 0;
-  color: #141414;
-  list-style-type: disc;
-  margin-left: 20px;
 
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.drop_down_card-li::marker {
-  color: #606060;
-  width: 4px;
-  height: 4px;
-}
-
-/* END drop down */
+/* END Intensiv */

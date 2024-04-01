@@ -5,20 +5,15 @@ const closePopUp = document.getElementById("close_pop_up");
 const popUp = document.getElementById("pop_up");
 const popUpEnd = document.getElementById("pop_up_end");
 
-
-
-
-openPopUp.forEach(function(item){
-  item.addEventListener('click' , () =>{
+openPopUp.forEach(function (item) {
+  item.addEventListener("click", () => {
     popUp.classList.add("active");
-  })
-})
-
-closePopUp.addEventListener('click', () => {
-  popUp.classList.remove("active");
+  });
 });
 
-
+closePopUp.addEventListener("click", () => {
+  popUp.classList.remove("active");
+});
 
 const SubmitLetter = document.getElementById("Submit_letter");
 
@@ -71,7 +66,6 @@ function blightFunc(entries) {
   });
 }
 
-
 const leftToRight = new IntersectionObserver(fromLeftToRight, options);
 
 const leftToRightEl = document.querySelectorAll(".leftToRight");
@@ -104,11 +98,9 @@ function fromRightToLeft(entries) {
   });
 }
 
-
-const openBurger = document.getElementById('burger-open');
-const closeBurger = document.getElementById('burger-close');
-const menu = document.getElementById('menu');
-
+const openBurger = document.getElementById("burger-open");
+const closeBurger = document.getElementById("burger-close");
+const menu = document.getElementById("menu");
 
 // BURGER
 
@@ -128,128 +120,135 @@ const menu = document.getElementById('menu');
 //   menu.classList.remove('active')
 // }
 
-
-openBurger.addEventListener('click', () => {
+openBurger.addEventListener("click", () => {
   // document.body.style.overflow = 'hidden';
 
-  menu.classList.add('active');
+  menu.classList.add("active");
 });
 
-closeBurger.addEventListener('click', () => {
-  document.body.style.overflow = 'auto';
+closeBurger.addEventListener("click", () => {
+  document.body.style.overflow = "auto";
 
-  menu.classList.remove('active');
+  menu.classList.remove("active");
 });
 
-const menuLinks = document.querySelectorAll('.menu-link');
+const menuLinks = document.querySelectorAll(".menu-link");
 
-menuLinks.forEach(link => link.addEventListener('click', () => {
-  document.body.style.overflow = 'auto';
+menuLinks.forEach((link) =>
+  link.addEventListener("click", () => {
+    document.body.style.overflow = "auto";
 
-  menu.classList.remove('active');
-}));
+    menu.classList.remove("active");
+  })
+);
 
 // AUDIO
 
+const player = document.querySelector(".audioPlayer");
+const playPlayer = document.querySelector(".audioPlayerMainRight");
+const audio = document.querySelector(".audioPlayerSong");
+const progressContainer = document.querySelector(".progress-container");
+const progress = document.querySelector(".progress");
+const buttonImg = document.querySelector(".playButton");
 
-const player = document.querySelector('.audioPlayer');
-const playPlayer = document.querySelector('.audioPlayerMainRight');
-const audio = document.querySelector('.audioPlayerSong');
-const progressContainer = document.querySelector('.progress-container')
-const progress = document.querySelector('.progress')
-const buttonImg = document.querySelector('.playButton')
+const timeDuration = document.querySelector(".duration");
+const timeCurrent = document.querySelector(".currentTime");
 
-const timeDuration = document.querySelector('.duration')
-const timeCurrent = document.querySelector('.currentTime')
-
-
-function playSong(){
-    player.classList.add('play');
-    buttonImg.src = './icon/PauseAudio.png'
-    audio.play()
+function playSong() {
+  player.classList.add("play");
+  console.log(buttonImg);
+  buttonImg.src = "./icon/PauseAudio.png";
+  audio.play();
 }
 
-function pauseSong(){
-  player.classList.remove('play');
-  buttonImg.src = './icon/PLAYAUDIO.png'
+function pauseSong() {
+  player.classList.remove("play");
+  buttonImg.src = "./icon/PLAYAUDIO.png";
 
-  audio.pause()
+  audio.pause();
 }
 
-playPlayer.addEventListener('click' , () => {
-  const isPlaying = player.classList.contains('play')
+playPlayer.addEventListener("click", () => {
+  const isPlaying = player.classList.contains("play");
   if (isPlaying) {
-    pauseSong()
+    pauseSong();
+  } else {
+    playSong();
   }
-  else{
-    playSong()
-  }
-})
+});
 
-
-
-function updateProgress (e) {   
-  const {duration , currentTime} = e.srcElement
+function updateProgress(e) {
+  const { duration, currentTime } = e.srcElement;
   const timeCurrentTime = Number(currentTime).toFixed(0);
 
-  timeCurrent.innerHTML = String(timeCurrentTime).padStart(2 ,'0');
-  const progressPercent = (currentTime / duration) * 100
-  progress.style.width = `${progressPercent}%`
-
+  timeCurrent.innerHTML = String(timeCurrentTime).padStart(2, "0");
+  const progressPercent = (currentTime / duration) * 100;
+  progress.style.width = `${progressPercent}%`;
 }
 
+audio.addEventListener("timeupdate", updateProgress);
 
-
-
-
-audio.addEventListener('timeupdate' , updateProgress)
-
-function setProgress (e) {
+function setProgress(e) {
   const width = this.clientWidth;
-  const clickX = e.offsetX; 
+  const clickX = e.offsetX;
   const duration = audio.duration;
 
   audio.currentTime = (clickX / width) * duration;
-
 }
 
-progressContainer.addEventListener('click' , setProgress)
+progressContainer.addEventListener("click", setProgress);
 
 // DROPDOWN
 
-const dropDownButton = document.querySelectorAll('.drop_down_card-button');
-const dropDownButtonBottom = document.querySelectorAll('.drop_down_card-button-bot');
+const dropDownButton = document.querySelectorAll(".drop_down_card-button");
+const dropDownButtonBottom = document.querySelectorAll(
+  ".drop_down_card-button-bot"
+);
 
-dropDownButton.forEach((el)=>{
-
-  el.addEventListener('click' , () => {
+dropDownButton.forEach((el) => {
+  el.addEventListener("click", () => {
     const content = el.nextElementSibling;
-    
-    
-    if (content.style.maxHeight){
+
+    if (content.style.maxHeight) {
       content.style.maxHeight = null;
-      document.querySelectorAll('drop_down_card-content').forEach((el) => el.style.maxHeight = null)
-      el.innerText = 'РАЗВЕРНУТЬ ';
+      document
+        .querySelectorAll("drop_down_card-content")
+        .forEach((el) => (el.style.maxHeight = null));
+      el.innerText = "РАЗВЕРНУТЬ ";
+    } else {
+      el.innerText = "СВЕРНУТЬ";
+      document
+        .querySelectorAll("drop_down_card-content")
+        .forEach((el) => (el.style.maxHeight = null));
+      content.style.maxHeight = content.scrollHeight + "px";
     }
+  });
+});
 
-    else{
-      el.innerText = 'СВЕРНУТЬ';
-      document.querySelectorAll('drop_down_card-content').forEach((el) => el.style.maxHeight = null)
-      content.style.maxHeight = content.scrollHeight + 'px';
-    }
-
-    
-
-
-  })
-})
-
-dropDownButtonBottom.forEach((but)=>{
-  but.addEventListener('click' , () => {
-
+dropDownButtonBottom.forEach((but) => {
+  but.addEventListener("click", () => {
     const content = but.parentElement;
     content.style.maxHeight = null;
-    content.previousElementSibling.innerText = 'РАЗВЕРНУТЬ'
-  })
-})
+    content.previousElementSibling.innerText = "РАЗВЕРНУТЬ";
+  });
+});
 
+// Acordeon
+
+const AccordeonTopButton = document.querySelectorAll(".accordeon-top-button");
+
+AccordeonTopButton.forEach((el) => {
+  el.addEventListener("click", () => {
+    const content = el.nextElementSibling;
+    const img = el.lastElementChild;
+
+    if (content.style.maxHeight) {
+      img.src = "./icon/Plus.svg";
+      content.style.maxHeight = null;
+    } else {
+      img.src = "./icon/minus.svg";
+
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+});
