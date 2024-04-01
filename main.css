@@ -1024,6 +1024,8 @@ body {
 
 .audioPlayerImage {
   border-radius: 2px;
+  width: 60px;
+  height: 60px;
 }
 
 .audioPlayerMainLeftTitle {
