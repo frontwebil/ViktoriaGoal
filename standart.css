@@ -169,6 +169,7 @@ margin-top: 20px;
   margin-bottom: 11px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .tariffs-info-text {
   font-size: 18px;
