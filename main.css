@@ -1271,6 +1271,7 @@ body {
 
 .way-personality {
   padding: 30px 14px;
+  padding-bottom: 60px;
   background-color: #141414;
 }
 .way-personality-title {
@@ -1297,14 +1298,14 @@ body {
   margin-top: 30px;
 }
 
-.meditation{
-font-size: 16px;
-font-weight: 600;
-color: #f6f5f5;
-margin-top: 10px;
+.meditation {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f6f5f5;
+  margin-top: 10px;
 }
 
-.way-personality-course-menu{
+.way-personality-course-menu {
   margin-top: 36px;
   display: flex;
   flex-direction: column;
@@ -1312,13 +1313,12 @@ margin-top: 10px;
 }
 
 .way-personality-course-menu-block {
-  border: 1px #F6F5F5 solid;
+  border: 1px #f6f5f5 solid;
   padding: 14px;
 }
 .way-personality-course-menu-block-title {
-font-size: 20px;
-font-weight: 500;
-
+  font-size: 20px;
+  font-weight: 500;
 }
 .way-personality-course-menu-block-list {
   display: flex;
@@ -1327,30 +1327,61 @@ font-weight: 500;
   margin-top: 16px;
   margin-left: 15px;
   margin-bottom: 23px;
-
 }
 .way-personality-course-menu-block-list-item {
-font-size: 14px;
-font-weight: 400;
-color: #F6F5F5;
-list-style: disc;
-
+  font-size: 14px;
+  font-weight: 400;
+  color: #f6f5f5;
+  list-style: disc;
 }
 
-.way-personality-course-menu-block-list-item::marker{
-  color: #892B28;
+.way-personality-course-menu-block-list-item::marker {
+  color: #892b28;
 }
 .way-personality-course-menu-block-bottom {
-  display: flex;justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .way-personality-course-menu-block-bottom-text {
-font-size: 20px;
-font-weight: 700;
-
+  font-size: 20px;
+  font-weight: 700;
 }
 .way-personality-course-menu-block-bottom-price {
-font-size: 20px;
-font-weight: 700;
-text-decoration: underline;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: underline;
 }
 /* END WAY */
+
+/* The choise */
+
+.the-choice-is-yours {
+  padding: 60px 16px;
+  background-image: url(img/yourChoice.jpg);
+  background-position: center;
+}
+.the-choice-is-yours-title {
+  font-family: MakSemiBold;
+  font-size: 42px;
+  font-weight: 600;
+  padding-bottom: 70px;
+}
+.the-choice-is-yours-content {
+  display: flex;
+  justify-content: space-between;
+}
+.the-choice-is-yours-content-column {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.the-choice-is-yours-content-column-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.the-choice-is-yours-content-column-text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* End The choise */
