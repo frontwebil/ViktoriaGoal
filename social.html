@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Psychology</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="anim.css" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="media.css" />
+  <link rel="stylesheet" href="standart.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <script src="main.js" defer></script>
+
+  <style>
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="pop_up" id="pop_up" style="z-index: 3;">
+    <div class="pop_up_container">
+      <div class="pop_up_body">
+        <div class="container-pop">
+          <div class="pop_up_top">
+            <p class="Pop-top-text">ПОДАТЬ ЗАЯВКУ</p>
+            <div style="cursor: pointer" id="close_pop_up">
+              <img src="icon/X.svg" alt="" />
+            </div>
+          </div>
+          <p class="pop-up-p-info">
+            Подайте заявку и получите быстрый ответ от автора
+          </p>
+
+          <div class="form">
+            <p class="form-text">Имя</p>
+            <input type="text" class="input" id="name" />
+            <p class="form-text">E-mail</p>
+            <input type="text" class="input" id="gmail" />
+            <!-- <a
+                class="button"
+                href="#"
+                id="Submit_letter"
+                onclick="getValue()"
+                style="max-width: 350px; padding: 18px 100px"
+                >ПОДАТЬ ЗАЯВКУ</a
+              > -->
+            <a href="#" id="Submit_letter" onclick="getValue()">
+              <button class="redirect-button" style="margin-top: 10px;">
+                <p class="redirect-button-text">ПОДАТЬ ЗАЯВКУ</p>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pop_up_end" id="pop_up_end">
+    <div class="pop_up_container">
+      <div class="pop_up_body">
+        <div class="container-pop" style="padding-bottom: 50px">
+          <h3 class="pop-end-h">СПАСИБО!</h3>
+          <p class="pop-end-p">
+            Ваша заявка была отправлена<br />
+            Ожидайте ответ от автора
+          </p>
+          <a href="index.html">
+            <button class="redirect-button">
+              <p class="redirect-button-text">НА ГЛАВНЫЙ ЭКРАН</p>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="main-container">
+
+    <header class="header" style="background-image: url(img/header-black.png);">
+      <div class="header-bottom">
+        <button id="burger-open"><img src="icon/List.svg" alt="" /></button>
+        <div class="header-bottom-right">
+          <img src="icon/Vector.svg" alt="" />
+          <div class="header-bottom-right-column">
+            <h3 class="header-text">УЮТНЫЙ БЛОГ</h3>
+            <p class="header-p">В INSTAGRAM</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="menu" id="menu">
+      <div class="main-container">
+        <div class="header" style="background-image: none; background-color: #141414">
+          <div class="header-bottom">
+            <button id="burger-close"><img src="icon/Xc.svg" alt="" /></button>
+            <div class="header-bottom-right">
+              <img src="icon/Vector.svg" alt="" />
+              <div class="header-bottom-right-column">
+                <h3 class="header-text">УЮТНЫЙ БЛОГ</h3>
+                <p class="header-p">В INSTAGRAM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-menu">
+          <div class="wrap-top">
+            <a href="index.html" class="adress">
+              <div class="text-menu" style="align-items: center;">
+                <h3 class="header-menu-wrap-h">
+                  ПСИХОЛОГИЯ
+                </h3>
+                <img src="icon/ArrowUp.svg" alt="" />
+              </div>
+            </a>
+            <p class="header-menu-wrap-p">Психотерапия Курсы Вебинары</p>
+          </div>
+
+          <div class="wrap-psych" style="align-items: center;">
+            <h3 class="wrap-psych-h">ЗАРАБОТОК В <br>
+              СОЦ. СЕТЯХ</h3>
+            <img src="icons-social/InstagramLogo.png" alt="" style="width: 44px;height: 44px;" />
+          </div>
+
+          <div class="menu-column">
+
+            <a href="#before-after" class="menu-link">
+              <div class="column-item">
+                <p class="column-item-text">КУРС</p>
+                <p class="column-item-greyText">«Заработок из соц.сетей <br>
+                  через личный бренд»</p>
+              </div>
+            </a>
+            <a href="#before-after" class="menu-link">
+              <div class="column-item">
+                <p class="column-item-text">НАСТАВНИЧЕСТВО</p>
+              </div>
+            </a>
+            <a href="#before-after" class="menu-link">
+              <div class="column-item">
+                <p class="column-item-text">КОНСУЛЬТАЦИЯ</p>
+                <p class="column-item-greyText">Консультация по TikTok + Instagram <br>
+                  для успешного заработка  </p>
+              </div>
+            </a>
+            <a href="#before-after" class="menu-link">
+              <div class="column-item">
+                <p class="column-item-text">ОТЗЫВЫ</p>
+              </div>
+            </a>
+
+            <a href="#contacts" class="menu-link">
+              <div class="column-item">
+                <p class="column-item-text">КОНТАКТЫ</p>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="container-vik-social">
+
+      <div class="container-vik-social-header">
+        <h2 style="white-space: nowrap;">ЗАРАБОТОК<br>
+          В СОЦ. СЕТЯХ</h2>
+        <div class="viktoria-line"></div>
+      </div>
+
+      <div class="container-vik-social-content">
+        <p class="container-vik-social-content-text">Наставничество, обучение по личному бренду, заработку в соц.сетях Instagram + TikTok, курс «Зароботок из соц. сетей через личный бренд»</p>
+
+
+        <button class="redirect-button" style="margin-top: 10px;margin-bottom: 15px;">
+          <p class="redirect-button-text open_pop_up">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</p>
+        </button>
+      </div>
+    </section>
+
+    <section class="consultation-tiktioInst">
+      <h2 class="consultation-tiktioInst-title">КОНСУЛЬТАЦИЯ</h2>
+      <p class="consultation-tiktioInst-title">Консультация по TikTok + Instagram для успешного заработка  </p>
+    </section>
+
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".clients-succesess-swiper", {
+      pagination: {
+        el: ".slider-controls-paginations-clients-success",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".custom-next-clients-success",
+        prevEl: ".custom-prev-clients-success",
+      },
+      allowTouchMove: false,
+
+    });
+
+    var swiper = new Swiper(".clients-succesess-swiper-innerSwiper", {
+      spaceBetween: 50,
+      allowTouchMove: true,
+    });
+  </script>
+  <script src="swiper.js"></script>
+</body>
+</html>

@@ -1531,20 +1531,18 @@ body {
   font-weight: 400;
 }
 
-
 .swiper-slide-clients-succes-underheader {
   display: flex;
   justify-content: space-between;
 }
 .swiper-slide-clients-succes-underheader-title {
-font-size: 16px;
-font-weight: 500;
+  font-size: 16px;
+  font-weight: 500;
 }
 .swiper-slide-clients-succes-underheader-text {
-font-size: 16px;
-font-weight: 500;
-padding-bottom: 5px;
-
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 5px;
 }
 
 .swiper-slide-clients-succes-testimonials-request {
@@ -1553,27 +1551,24 @@ padding-bottom: 5px;
   margin-top: 20px;
 }
 .swiper-slide-clients-succes-request-text {
-font-size: 16px;
-font-weight: 400;
-text-align: left;
-
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
 }
 .swiper-slide-clients-succes-testimonials-text {
-font-size: 16px;
-font-weight: 400;
-text-align: right;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: right;
 }
 
-.swiper-slide-clients-succes-pagination{
+.swiper-slide-clients-succes-pagination {
   font-family: MakSemiBold;
   font-size: 22px;
   font-weight: 400;
   color: #141414;
 }
 
-
 /* Contacts */
-
 
 .contacts {
   padding: 60px 16px;
@@ -1585,14 +1580,13 @@ text-align: right;
   align-items: center;
 }
 .contacts-header-title {
-font-family: MakSemiBold;
-font-size: 42px;
-font-weight: 600;
-
+  font-family: MakSemiBold;
+  font-size: 42px;
+  font-weight: 600;
 }
 .contacts-header-line {
   height: 1px;
-  background-color: #F6F5F5;
+  background-color: #f6f5f5;
   width: 100%;
   position: relative;
   right: -16px;
@@ -1607,17 +1601,17 @@ font-weight: 600;
 }
 
 .contacts-list-item-text-title {
-font-size: 20px;
-font-weight: 600;
-color: #F6F5F5;
+  font-size: 20px;
+  font-weight: 600;
+  color: #f6f5f5;
 }
 .contacts-list-item-text-link {
-font-size: 18px;
-font-weight: 400;
-color: #606060;
+  font-size: 18px;
+  font-weight: 400;
+  color: #606060;
 }
 
-.contacts-list{
+.contacts-list {
   display: flex;
   flex-direction: column;
 }
@@ -1630,41 +1624,38 @@ color: #606060;
 .contacts-row-photo-left {
   background-image: url(img/social-left-img.jpg);
   width: 192px;
-    height: 250px;
-    object-fit: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  height: 250px;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .contacts-row-photo-right {
   background-image: url(img/social-right-img.jpg);
   width: 192px;
-    height: 250px;
-    object-fit: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
+  height: 250px;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Footer */
 
-
 .article {
   padding: 60px 16px;
-  background-color: #F6F5F5;
+  background-color: #f6f5f5;
 }
 .article-header {
   display: flex;
   gap: 60px;
   align-items: center;
-  
 }
 .article-header-title {
-font-family: MakSemiBold;
-font-size: 42px;
-font-weight: 600;
-color: #141414;
+  font-family: MakSemiBold;
+  font-size: 42px;
+  font-weight: 600;
+  color: #141414;
 }
 .article-header-line {
   height: 1px;
@@ -1675,3 +1666,43 @@ color: #141414;
 }
 
 /* ENd Footer */
+
+/* Social */
+
+.container-vik-social {
+  margin-top: 85px;
+  padding: 30px 16px 20px 16px;
+  background-image: url(img/social-viktoria.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container-vik-social-header {
+  font-family: MakSemiBold;
+  font-size: 42px;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.viktoria-line {
+  height: 1px;
+  width: 100%;
+  background-color: #f6f5f5;
+  position: relative;
+  right: -16px;
+}
+
+.container-vik-social-content-text {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 450px;
+}
+
+.column-item-greyText {
+  font-size: 15px;
+  font-weight: 500;
+  color: #606060;
+  padding-left: 10px;
+}
