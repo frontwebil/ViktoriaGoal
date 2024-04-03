@@ -8,11 +8,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="standart.css">
+    <link rel="stylesheet" href="media.css" />
   <link rel="stylesheet" href="anim.css" />
-  <link rel="stylesheet" href="main.css" />
-  <link rel="stylesheet" href="reset.css" />
-  <link rel="stylesheet" href="media.css" />
-  <link rel="stylesheet" href="standart.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <script src="main.js" defer></script>
@@ -1729,7 +1729,8 @@
         <div class="accordeon-top-button-white">
           <div class="accordeon-top-button-left">
             <p class="accordeon-top-button-left-number"></p>
-            <p class="accordeon-top-button-left-text" style="color: #f6f5f5;" id="before-after">Хочу к психологу, но боюсь</p>
+            <p class="accordeon-top-button-left-text" style="color: #f6f5f5;" id="before-after">Хочу к психологу, но
+              боюсь</p>
           </div>
           <img src="icon/Plus-white.svg" alt="" class="accordeon-img">
         </div>
@@ -1747,7 +1748,7 @@
   </section>
 
 
-  <section class="testimonials-before-after" >
+  <section class="testimonials-before-after">
     <div class="testimonials-before-after-top">
       <h2 class="testimonials-before-after-header-title" id="beforeAfter-btn" style="cursor: pointer;">ДО/ПОСЛЕ</h2>
       <p class="testimonials-before-after-header-text" id="testimonials-btn" style="cursor: pointer;">ОТЗЫВЫ</p>
@@ -1921,9 +1922,12 @@
 
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <video src="video/slider-video-testi.mp4" style="width: 360px;height: 300px;" controls poster="poster/case1-1.png"></video>
+                  <video src="video/slider-video-testi.mp4" style="width: 360px;height: 300px;" controls
+                    poster="poster/case1-1.png"></video>
                 </div>
-                <div class="swiper-slide"><img src="slider-testi/case-1.png" alt="" style="margin-top: 35px;"></div>
+                <div class="swiper-slide"><img src="slider-testi/case-1.png" alt="" style="margin-top: 35px;
+                  border: 1px white solid;
+                  height: 260px;"></div>
               </div>
 
             </div>
@@ -1946,20 +1950,22 @@
 
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <video src="slider-testi/case2-firstVideo.mp4" style="width: 100%;height: 240px;margin-top: 20px;" poster="poster/case2-1.png"
-                    controls></video>
+                  <video src="slider-testi/case2-firstVideo.mp4" style="width: 100%;height: 240px;margin-top: 20px;"
+                    poster="poster/case2-1.png" controls></video>
                 </div>
                 <div class="swiper-slide">
-                  <video src="slider-testi/case2-secondVideo.mp4" style="width: 100%;height: 240px;margin-top: 20px;" poster="poster/case2-2.png"
-                    controls></video>
+                  <video src="slider-testi/case2-secondVideo.mp4" style="width: 100%;height: 240px;margin-top: 20px;"
+                    poster="poster/case2-2.png" controls></video>
                 </div>
                 <div class="swiper-slide">
-                  <video src="slider-testi/case2-thirdVideo.mp4" style="width: 100%;height: 240px;margin-top: 20px;" poster="poster/case2-3.png"
-                    controls></video>
+                  <video src="slider-testi/case2-thirdVideo.mp4" style="width: 100%;height: 240px;margin-top: 20px;"
+                    poster="poster/case2-3.png" controls></video>
                 </div>
 
-                <div class="swiper-slide"><img src="slider-testi/case2-testi.png" alt=""></div>
-                <div class="swiper-slide"><img src="slider-testi/case2-testi-2.png" alt=""></div>
+                <div class="swiper-slide"><img src="slider-testi/case2-testi.png" alt="" style="    border: 1px white solid;
+                  height: 238px;
+                  margin-top: 20px;"></div>
+                <div class="swiper-slide"><img src="slider-testi/case2-testi-2.png" alt="" style="border: 1px white solid;height: 238px;margin-top: 20px;"></div>
 
               </div>
 
@@ -1986,13 +1992,13 @@
               <div class="swiper-wrapper">
 
                 <div class="swiper-slide">
-                  <img src="slider-testi/case3-first-left.png" alt="" style="width: 100%;height: 250px;">
-                  <img src="slider-testi/case3-first-right.jpg" alt="" style="width: 100%;height: 250px;">
+                  <img src="slider-testi/case3-first-left.png" alt="" style="width: 200px;height: 250px;margin-left: 30px;">
+                  <img src="slider-testi/case3-first-right.jpg" alt="" style="width: 200px;height: 250px;">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="slider-testi/case3-second-left.png" alt="" style="width: 100%;height: 250px;">
-                  <img src="slider-testi/case3-second-right.jpg" alt="" style="width: 100%;height: 250px;">
+                  <img src="slider-testi/case3-second-right.jpg" alt="" style="width: 200px;height: 250px;">
+                  <img src="slider-testi/case3-second-left.png" alt="" style="width: 200px;height: 250px;">
                 </div>
 
 
@@ -2424,7 +2430,9 @@
     });
 
     var swiper = new Swiper(".clients-succesess-swiper-innerSwiper", {
-      spaceBetween: 50,
+      spaceBetween: 20,
+      slidesPerView: 1,
+
       allowTouchMove: true,
       navigation: {
         nextEl: ".swiper-button-next",
