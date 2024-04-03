@@ -1394,7 +1394,7 @@ body {
 
 .banner-photo {
   padding: 40px 16px;
-  background-color: #F6F5F5;
+  background-color: #f6f5f5;
 }
 .banner-photo-content {
   background-image: url(img/banner-photo.jpg);
@@ -1409,23 +1409,21 @@ body {
 .important-question {
   padding: 60px 14px;
   background-color: #141414;
-
 }
 .important-question-top-title {
   font-family: MakSemiBold;
-font-size: 42px;
-font-weight: 600;
-margin-bottom: 20px;
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 /* END IMPORTANT */
-
 
 /* testimonials-before-after */
 
 .testimonials-before-after {
   padding: 60px 16px;
-  background-color: #F6F5F5;
+  background-color: #f6f5f5;
 }
 .testimonials-before-after-top {
   display: flex;
@@ -1433,15 +1431,15 @@ margin-bottom: 20px;
   align-items: center;
 }
 .testimonials-before-after-header-title {
-font-family: MakSemiBold;
-font-size: 42px;
-font-weight: 600;
-color: #141414;
+  font-family: MakSemiBold;
+  font-size: 42px;
+  font-weight: 600;
+  color: #141414;
 }
 .testimonials-before-after-header-text {
-font-size: 18px;
-font-weight: 600;
-color: #141414;
+  font-size: 18px;
+  font-weight: 600;
+  color: #141414;
 }
 
 .slider {
@@ -1464,11 +1462,9 @@ color: #141414;
   font-size: 20px;
   font-weight: 600;
   line-height: 24.38px;
-  color:#141414;
+  color: #141414;
   margin-top: 12px;
-
 }
-
 
 .slider-controls {
   margin-top: 20px;
@@ -1483,10 +1479,10 @@ color: #141414;
   height: 32px;
 }
 .slider-controls-paginations {
-font-family: MakSemiBold;
-font-size: 22px;
-font-weight: 400;
-color: #141414;
+  font-family: MakSemiBold;
+  font-size: 22px;
+  font-weight: 400;
+  color: #141414;
 }
 .slider-controls-right-arrow {
   cursor: pointer;
@@ -1494,7 +1490,76 @@ color: #141414;
   height: 32px;
 }
 
-
-#mySwiperUnder{
+#mySwiperUnder {
   display: none;
+}
+
+.clients-succesess {
+  padding: 0px 16px 60px 16px;
+  background-color: #f6f5f5;
+}
+.clients-succesess-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.clients-succesess-header-title {
+  font-family: MakSemiBold;
+  font-size: 42px;
+  font-weight: 600;
+  color: #141414;
+}
+.clients-succesess-header-line {
+  height: 1px;
+  background-color: #141414;
+  width: 100%;
+  position: relative;
+  right: -16px;
+}
+
+.swiper-slide-clients-succes-header {
+  display: flex;
+  justify-content: space-between;
+}
+.swiper-slide-clients-succes-header-title {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.swiper-slide-clients-succes-header-text {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+.swiper-slide-clients-succes-underheader {
+  display: flex;
+  justify-content: space-between;
+}
+.swiper-slide-clients-succes-underheader-title {
+font-size: 16px;
+font-weight: 500;
+}
+.swiper-slide-clients-succes-underheader-text {
+font-size: 16px;
+font-weight: 500;
+padding-bottom: 5px;
+
+}
+
+.swiper-slide-clients-succes-testimonials-request {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.swiper-slide-clients-succes-request-text {
+font-size: 16px;
+font-weight: 400;
+text-align: left;
+
+}
+.swiper-slide-clients-succes-testimonials-text {
+font-size: 16px;
+font-weight: 400;
+text-align: right;
 }

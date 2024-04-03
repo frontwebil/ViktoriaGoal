@@ -9,6 +9,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+// allowTouchMove:false,
 
 var swiperUnder = new Swiper(".mySwiper-under", {
   pagination: {
