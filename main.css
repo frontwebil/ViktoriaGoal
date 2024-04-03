@@ -24,6 +24,10 @@ body {
 
   font-family: "Montserrat", sans-serif;
   color: #f6f5f5;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100%;
 }
 
 /* POP */
@@ -1398,4 +1402,99 @@ body {
   height: 244px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* Important */
+
+.important-question {
+  padding: 60px 14px;
+  background-color: #141414;
+
+}
+.important-question-top-title {
+  font-family: MakSemiBold;
+font-size: 42px;
+font-weight: 600;
+margin-bottom: 20px;
+}
+
+/* END IMPORTANT */
+
+
+/* testimonials-before-after */
+
+.testimonials-before-after {
+  padding: 60px 16px;
+  background-color: #F6F5F5;
+}
+.testimonials-before-after-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonials-before-after-header-title {
+font-family: MakSemiBold;
+font-size: 42px;
+font-weight: 600;
+color: #141414;
+}
+.testimonials-before-after-header-text {
+font-size: 18px;
+font-weight: 600;
+color: #141414;
+}
+
+.slider {
+  margin-top: 20px;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.slide {
+  display: flex;
+  gap: 16px;
+}
+
+.swiper-slide {
+  display: flex;
+  gap: 16px;
+}
+
+.slide-text {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.38px;
+  color:#141414;
+  margin-top: 12px;
+
+}
+
+
+.slider-controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.slider-controls-left-arrow {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+.slider-controls-paginations {
+font-family: MakSemiBold;
+font-size: 22px;
+font-weight: 400;
+color: #141414;
+}
+.slider-controls-right-arrow {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+
+
+#mySwiperUnder{
+  display: none;
 }

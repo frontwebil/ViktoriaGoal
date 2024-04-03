@@ -277,3 +277,21 @@ AccordeonTopButtonWhite.forEach((el) => {
     }
   });
 });
+
+
+// SLIDER CHANGE
+
+const slideUnder = document.getElementById('mySwiperUnder');
+const testimonialsBtn = document.getElementById('testimonials-btn');
+const beforeAfterBtn = document.getElementById('beforeAfter-btn');
+const mainSlider = document.getElementById('main-slider');
+
+testimonialsBtn.onclick = function (){
+  slideUnder.style.display = 'block';
+  mainSlider.style.display = 'none';
+};
+
+beforeAfterBtn.onclick = function () {
+  slideUnder.style.display = 'none';
+  mainSlider.style.display = 'block';
+}

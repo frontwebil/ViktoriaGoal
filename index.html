@@ -13,8 +13,34 @@
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="media.css" />
   <link rel="stylesheet" href="standart.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <script src="main.js" defer></script>
+
+  <style>
+    .swiper {
+      width: 100%;
+      height: 100%;
+      background-color: #F6F5F5;
+    }
+
+    .swiper-slide {
+      background-color: #F6F5F5;
+
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
 </head>
 
 <body id="home">
@@ -1547,13 +1573,20 @@
         <h2 class="way-personality-course-menu-block-title">/ VIP</h2>
 
         <ul class="way-personality-course-menu-block-list">
-          <li class="way-personality-course-menu-block-list-item">Я ваш куратор и  даю обратную связь и отвечаю на все ваши вопросы <span style="font-weight: 600;">во время всего обучения</span></li>
-          <li class="way-personality-course-menu-block-list-item">Медитации к <span style="font-weight: 600;">каждому</span> модулю</li>
-          <li class="way-personality-course-menu-block-list-item"><span style="font-weight: 600;">4 сессии с психологом</span> на протяжении всего обучениях</li>
-          <li class="way-personality-course-menu-block-list-item">Я прохожу весь путь обучения вместе с вами, всему учу, поддерживаю</li>
-          <li class="way-personality-course-menu-block-list-item" style="font-weight: 600;">1 сессия 2-2.5 часа со мною лично</li>
-          <li class="way-personality-course-menu-block-list-item" style="font-weight: 600;">Со мною лично составляем план вашего масштаба на каждую сферу жизни</li>
-          <li class="way-personality-course-menu-block-list-item" style="font-weight: 600;">У вас свой личный куратор / психолог при необходимости</li>
+          <li class="way-personality-course-menu-block-list-item">Я ваш куратор и даю обратную связь и отвечаю на все
+            ваши вопросы <span style="font-weight: 600;">во время всего обучения</span></li>
+          <li class="way-personality-course-menu-block-list-item">Медитации к <span
+              style="font-weight: 600;">каждому</span> модулю</li>
+          <li class="way-personality-course-menu-block-list-item"><span style="font-weight: 600;">4 сессии с
+              психологом</span> на протяжении всего обучениях</li>
+          <li class="way-personality-course-menu-block-list-item">Я прохожу весь путь обучения вместе с вами, всему учу,
+            поддерживаю</li>
+          <li class="way-personality-course-menu-block-list-item" style="font-weight: 600;">1 сессия 2-2.5 часа со мною
+            лично</li>
+          <li class="way-personality-course-menu-block-list-item" style="font-weight: 600;">Со мною лично составляем
+            план вашего масштаба на каждую сферу жизни</li>
+          <li class="way-personality-course-menu-block-list-item" style="font-weight: 600;">У вас свой личный куратор /
+            психолог при необходимости</li>
 
         </ul>
 
@@ -1585,7 +1618,7 @@
 
     </div>
 
-    
+
     <button class="redirect-button open_pop_up" style="margin-top: 200px;">
       <p class="redirect-button-text">КУПИТЬ</p>
     </button>
@@ -1595,8 +1628,289 @@
     <div class="banner-photo-content"></div>
   </section>
 
+  <section class="important-question">
+
+    <h2 class="important-question-top-title">ВАЖНЫЕ <br>
+      ВОПРОСЫ</h2>
+
+    <div class="accordeon">
+
+      <div class="accordeon-item" style="padding-left: 0px;border-top: 1px white solid;">
+        <div class="accordeon-top-button-white">
+          <div class="accordeon-top-button-left">
+            <p class="accordeon-top-button-left-number"></p>
+            <p class="accordeon-top-button-left-text" style="color: #f6f5f5;">Как мне может помочь психолог?</p>
+          </div>
+          <img src="icon/Plus-white.svg" alt="" class="accordeon-img">
+        </div>
+        <div class="accordeon-content" style="padding-left: 20px;">
+          <p class="accordeon-content-text" style="color: #f6f5f5;font-weight: 400;margin-top: 10px;">Психолог нужен не
+            только людям, у которых тревога, депрессии, БАР, ПРЛ и прочее, а и здоровым людям он будет очень необходим.
+            <br><br>
+
+            Почему? Объясняю, <span style="font-weight: 600;">я как психолог вам за 1 сессию профессионально дам ответы
+              на все вопросы,</span> почему так происходит, что у вас в жизни такие мужчины/женщины, почему нету
+            отношений или они токсичные/плохие, почему такой заработок, что вас останавливает и т д. <br><br>
+
+            <span style="font-weight: 600;">А также расскажу что делать чтобы это исправить. Чтобы наладить гармонию,
+              придти к легкости, счастью, отпустить травмы и пойти дальше.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="accordeon-item" style="padding-left: 0px;">
+        <div class="accordeon-top-button-white">
+          <div class="accordeon-top-button-left">
+            <p class="accordeon-top-button-left-number"></p>
+            <p class="accordeon-top-button-left-text" style="color: #f6f5f5;">А есть у вас бесплатная<br>
+              диагностическая сессия?</p>
+          </div>
+          <img src="icon/Plus-white.svg" alt="" class="accordeon-img">
+        </div>
+        <div class="accordeon-content" style="padding-left: 20px;">
+          <p class="accordeon-content-text" style="color: #f6f5f5;font-weight: 400;margin-top: 10px;">Мои хорошие, для
+            тех людей, кто именно хочет идти в долгосрочную терапию, понимает, что хочет полностью поменять мышление,
+            взгляды на жизнь, избавиться от травм детства, неуверенности или же у кого депрессия, ПРЛ,БАР,КПТСР,ПТСР и т
+            д.<br><br>
+
+            <span style="font-weight: 600;">У меня есть 20-ти минутное знакомство, диагностическая сессия, чтобы понять
+              могу ли я вам помочь и подхожу ли я вам.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="accordeon-item" style="padding-left: 0px;">
+        <div class="accordeon-top-button-white">
+          <div class="accordeon-top-button-left">
+            <p class="accordeon-top-button-left-number"></p>
+            <p class="accordeon-top-button-left-text" style="color: #f6f5f5;">Чем вы отличаетесь от других<br>
+              психологов?</p>
+          </div>
+          <img src="icon/Plus-white.svg" alt="" class="accordeon-img">
+        </div>
+        <div class="accordeon-content" style="padding-left: 20px;">
+          <p class="accordeon-content-text" style="color: #f6f5f5;font-weight: 400;margin-top: 10px;"><span
+              style="font-weight: 600;">Я работаю исключительно на результат и запрос клиента.</span><br>
+            Для меня важно эффективность, я не тот терапевт, кто просто разговаривает. <br><br>
+
+            Перед каждой сессией я задаю<br> вначале вопрос: <br>
+            «Какие ваши ожидания?» <br><br>
+
+            <span style="font-weight: 600;">И в конце:</span><br>
+            «Получили ли вы, то что хотели?». <br>
+            В 99% случаях, клиенты отвечают: <br>
+            «Да, и даже намного больше»
+          </p>
+        </div>
+      </div>
+
+      <div class="accordeon-item" style="padding-left: 0px;">
+        <div class="accordeon-top-button-white">
+          <div class="accordeon-top-button-left">
+            <p class="accordeon-top-button-left-number"></p>
+            <p class="accordeon-top-button-left-text" style="color: #f6f5f5;">Сколько нужно сессий?</p>
+          </div>
+          <img src="icon/Plus-white.svg" alt="" class="accordeon-img">
+        </div>
+        <div class="accordeon-content" style="padding-left: 20px;">
+          <p class="accordeon-content-text" style="color: #f6f5f5;font-weight: 400;margin-top: 10px;">Все индивидуально.
+            <br><br>
+
+            Если вы психологически здоровый человек, то вам хватит 1-2 сессии, ответы на ваши вопросы. За 2-3 дня до
+            сессии я дам вам задание написать все вопросы, что вас интересуют и я подробно разберу каждый, объясню
+            почему так и что с этим делать.
+            К примеру: «Где моя зона роста?», «Почему у меня не получается выйти на ваше доход?», «Как наладить
+            отношения я с семьей?» и т д.<br><br>
+
+            Если нужна терапия, я или направляю к психиатру для диагноза или работаем в терапии 1-2 раза в неделю. <br>
+            <span style="font-weight: 600;">Длительность подбирается индивидуально.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="accordeon-item" style="padding-left: 0px;border-bottom: 1px white solid;">
+        <div class="accordeon-top-button-white">
+          <div class="accordeon-top-button-left">
+            <p class="accordeon-top-button-left-number"></p>
+            <p class="accordeon-top-button-left-text" style="color: #f6f5f5;">Хочу к психологу, но боюсь</p>
+          </div>
+          <img src="icon/Plus-white.svg" alt="" class="accordeon-img">
+        </div>
+        <div class="accordeon-content" style="padding-left: 20px;">
+          <p class="accordeon-content-text" style="color: #f6f5f5;font-weight: 400;margin-top: 10px;">Мои хорошие, <span
+              style="font-weight: 600;">я более 4-х лет в психологии</span> и на сессиях, я делаю все для того, чтобы
+            вам было спокойно и безопасно, после сессии вам станет настолько легче и лучше, вся тревога и переживания
+            уйдут за первые минуты.<br><br>
+            А после сессии вы поймете,<span style="font-weight: 600;">что это лучший антистресс и ментальный
+              отдых.</span></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="testimonials-before-after">
+    <div class="testimonials-before-after-top">
+      <h2 class="testimonials-before-after-header-title" id="beforeAfter-btn" style="cursor: pointer;">ДО/ПОСЛЕ</h2>
+      <p class="testimonials-before-after-header-text" id="testimonials-btn" style="cursor: pointer;">ОТЗЫВЫ</p>
+    </div>
+
+    <div class="swiper mySwiper" id="main-slider" style="padding-bottom: 45px;margin-top: 20px;">
+
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+
+          <div class="slide-left">
+            <img src="testimonials/before-1.jpg" alt="">
+            <p class="slide-text" style="text-align: left;">ДО</p>
+
+          </div>
+          <div class="slide-right">
+            <img src="testimonials/after-1.jpg" alt="">
+            <p class="slide-text" style="text-align: left;">ПОСЛЕ</p>
+
+
+          </div>
+
+        </div>
+        <div class="swiper-slide" style="margin-bottom: 20px;">
+
+          <div class="slide-left">
+            <img src="testimonials/before-2.jpg" alt="" style="border: 1px black solid;">
+            <p class="slide-text" style="text-align: left;">ДО</p>
+
+          </div>
+          <div class="slide-right">
+            <img src="testimonials/after-2.jpg" alt="" style="border: 1px black solid;">
+            <p class="slide-text" style="text-align: left;">ПОСЛЕ</p>
+
+          </div>
+
+
+        </div>
+      </div>
+      <div class="slider-controls">
+        <div class="custom-prev"><img src="testimonials/arrowleft.png" alt="" style="width: 32px;height: 32px;cursor: pointer;"></div>
+        <div class="slider-controls-paginations top" style="color: black;text-align: center;" ></div>
+        <div class="custom-next"><img src="testimonials/arrowright.png" alt="" style="width: 32px;height: 32px;cursor: pointer;"></div>
+      </div>
+
+
+
+    </div>
+
+    <div class="swiper mySwiper-under" id="mySwiperUnder" style="padding-bottom: 60px;margin-top: 20px;">
+
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="testimonials/testi-1.jpg" alt="" style="border: 1px black solid;">
+        </div>
+
+        <div class="swiper-slide" style="margin-bottom: 20px;">
+          <img src="testimonials/testi-2.jpg" alt="" style="border: 1px black solid;">
+          </div>
+
+          <div class="swiper-slide" style="margin-bottom: 20px;">
+            <img src="testimonials/testi-3.jpg" alt="" style="border: 1px black solid;">
+          </div>
+
+          <div class="swiper-slide" style="margin-bottom: 20px;">
+            <img src="testimonials/testi-4.jpg" alt="" style="border: 1px black solid;">
+          </div>
+
+          <div class="swiper-slide" style="margin-bottom: 20px;">
+            <img src="testimonials/testi-5.jpg" alt="" style="border: 1px black solid;">
+          </div>
+
+          <div class="swiper-slide" style="margin-bottom: 20px;">
+            <img src="testimonials/testi-6.jpg" alt="" style="border: 1px black solid;">
+          </div>
+
+          <div class="swiper-slide" style="margin-bottom: 20px;">
+            <img src="testimonials/testi-7.jpg" alt="" style="border: 1px black solid;">
+          </div>
+
+          <div class="swiper-slide" style="margin-bottom: 20px;">
+            <img src="testimonials/testi-8.jpg" alt="" style="border: 1px black solid;">
+          </div>
+
+          <div class="swiper-slide" style="margin-bottom: 20px;">
+            <img src="testimonials/testi-9.jpg" alt="" style="border: 1px black solid;">
+          </div>
+
+          <div class="swiper-slide" style="margin-bottom: 20px;">
+            <img src="testimonials/testi-10.jpg" alt="" style="border: 1px black solid;">
+          </div>
+
+          <div class="swiper-slide" style="margin-bottom: 20px;">
+            <img src="testimonials/testi-11.jpg" alt="" style="border: 1px black solid;">
+          </div>
+
+          <div class="swiper-slide" style="margin-bottom: 20px;">
+            <img src="testimonials/testi-12.jpg" alt="" style="border: 1px black solid;">
+          </div>
+
+          <div class="swiper-slide" style="margin-bottom: 20px;">
+            <img src="testimonials/testi-13.jpg" alt="" style="border: 1px black solid;">
+          </div>
+
+          <div class="swiper-slide" style="margin-bottom: 20px;">
+            <img src="testimonials/testi-14.jpg" alt="" style="border: 1px black solid;">
+          </div>
+
+        </div>
+
+        <div class="slider-controls">
+          <div class="custom-prev-under"><img src="testimonials/arrowleft.png" alt="" style="width: 32px;height: 32px;"></div>
+          <div class="slider-controls-paginations under" style="color: black;text-align: center;" ></div>
+          <div class="custom-next-under"><img src="testimonials/arrowright.png" alt="" style="width: 32px;height: 32px;"></div>
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+
+
+  </section>
+
   </div>
   <!-- </div> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".top",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".custom-next",
+        prevEl: ".custom-prev",
+      },
+    });
+
+
+    var swiper = new Swiper(".mySwiper-under", {
+      pagination: {
+        el: ".under",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".custom-next-under",
+        prevEl: ".custom-prev-under",
+      },
+    });
+  </script>
 </body>
 
 </html>
+
+
+
+
