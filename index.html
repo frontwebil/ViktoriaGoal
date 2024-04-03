@@ -179,7 +179,7 @@
               </div>
             </a>
 
-            <a href="" class="menu-link">
+            <a href="#important-question" class="menu-link">
               <div class="column-item">
                 <p class="column-item-text">ВАЖНЫЕ ВОПРОСЫ</p>
               </div>
@@ -554,7 +554,7 @@
     </div>
 
     <a href="
-        https://www.instagram.com/viktoria_goal?igsh=aHpteHNqcW0zaGwy&utm_source=qr" target="_blank">
+    https://www.instagram.com/mental.centre?igsh=MWk0bW94d3NqazI5OQ%3D%3D&utm_source=qr" target="_blank">
       <button class="redirect-button">
         <p class="redirect-button-text">НАЙТИ СПЕЦИАЛИСТА</p>
       </button>
@@ -1625,7 +1625,7 @@
     <div class="banner-photo-content"></div>
   </section>
 
-  <section class="important-question">
+  <section class="important-question" id="important-question">
 
     <h2 class="important-question-top-title">ВАЖНЫЕ <br>
       ВОПРОСЫ</h2>
@@ -1921,9 +1921,9 @@
 
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <video src="video/slider-video-testi.mp4" style="width: 360px;height: 300px;" controls></video>
+                  <video src="video/slider-video-testi.mp4" style="width: 360px;height: 300px;" controls poster="poster/case1-1.png"></video>
                 </div>
-                <div class="swiper-slide"><img src="slider-testi/case-1.png" alt=""></div>
+                <div class="swiper-slide"><img src="slider-testi/case-1.png" alt="" style="margin-top: 35px;"></div>
               </div>
 
             </div>
@@ -1946,20 +1946,23 @@
 
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <video src="slider-testi/case2-firstVideo.mp4" style="width: 100%;height: 240px;margin-top: 20px;"
+                  <video src="slider-testi/case2-firstVideo.mp4" style="width: 100%;height: 240px;margin-top: 20px;" poster="poster/case2-1.png"
                     controls></video>
                 </div>
                 <div class="swiper-slide">
-                  <video src="slider-testi/case2-secondVideo.mp4" style="width: 100%;height: 240px;margin-top: 20px;"
+                  <video src="slider-testi/case2-secondVideo.mp4" style="width: 100%;height: 240px;margin-top: 20px;" poster="poster/case2-2.png"
                     controls></video>
                 </div>
                 <div class="swiper-slide">
-                  <video src="slider-testi/case2-thirdVideo.mp4" style="width: 100%;height: 240px;margin-top: 20px;"
+                  <video src="slider-testi/case2-thirdVideo.mp4" style="width: 100%;height: 240px;margin-top: 20px;" poster="poster/case2-3.png"
                     controls></video>
                 </div>
+
                 <div class="swiper-slide"><img src="slider-testi/case2-testi.png" alt=""></div>
                 <div class="swiper-slide"><img src="slider-testi/case2-testi-2.png" alt=""></div>
+
               </div>
+
 
             </div>
 
@@ -2030,7 +2033,7 @@
 
     <ul class="contacts-list" style="margin-top: 20px;">
 
-      <a href="https://www.instagram.com/viktoria_goal/">
+      <a href="https://www.instagram.com/mental.centre?igsh=MWk0bW94d3NqazI5OQ%3D%3D&utm_source=qr">
         <li class="contacts-list-item" style="background-color: #892B28;border-bottom: 0;">
           <img src="icons-social/InstagramLogo.png" alt="" style="width: 32px;height: 32px;">
           <div class="contacts-list-item-text">
@@ -2423,6 +2426,10 @@
     var swiper = new Swiper(".clients-succesess-swiper-innerSwiper", {
       spaceBetween: 50,
       allowTouchMove: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     });
   </script>
   <script src="swiper.js"></script>
