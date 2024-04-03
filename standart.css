@@ -63,11 +63,11 @@
   color: #606060;
 }
 
-.accordeon-content-text{
-font-size: 16px;
-font-weight: 400;
-color: #141414;
-margin-top: 20px;
+.accordeon-content-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #141414;
+  margin-top: 20px;
 }
 /* ACCORDEON END */
 
@@ -153,6 +153,15 @@ margin-top: 20px;
   height: 4px;
 }
 
+.drop_down_card-row-header {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+  color: #606060;
+}
+
 /* END drop down */
 
 /* Tarifs */
@@ -187,7 +196,6 @@ margin-top: 20px;
   font-weight: 400;
   color: #141414;
   padding-right: 10px;
-
 }
 
 .tariffs-info-undertext {
