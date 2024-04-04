@@ -302,3 +302,4 @@ beforeAfterBtn.onclick = function () {
   document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add('loaded');
   });
+
