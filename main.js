@@ -296,6 +296,8 @@ beforeAfterBtn.onclick = function () {
   mainSlider.style.display = 'block';
 }
 
-  window.onload = function () {
+  const home = document.getElementById('home')
+
+  document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add('loaded');
-  }
+  });
