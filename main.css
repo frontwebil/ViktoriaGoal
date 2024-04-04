@@ -643,7 +643,6 @@ body {
 }
 
 .with-me-wrap-img-left {
-  background-image: url(img/with-me-left.jpg);
   width: 192px;
   height: 280px;
   object-fit: cover;
@@ -653,7 +652,6 @@ body {
 }
 
 .with-me-wrap-img-right {
-  background-image: url(img/with-me-right.jpg);
   width: 192px;
   height: 280px;
   object-fit: cover;

@@ -303,3 +303,7 @@ beforeAfterBtn.onclick = function () {
     document.body.classList.add('loaded');
   });
 
+
+  home.onload = function(){
+    console.log('aboba')
+  }
