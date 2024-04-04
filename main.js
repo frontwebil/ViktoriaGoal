@@ -295,3 +295,7 @@ beforeAfterBtn.onclick = function () {
   slideUnder.style.display = 'none';
   mainSlider.style.display = 'block';
 }
+
+  window.onload = function () {
+    document.body.classList.add('loaded');
+  }
