@@ -37,10 +37,15 @@
   .premium-product-list-withimg-photo{
     opacity: 0.70;
   }
+
 }
 
 @media only screen and (max-width: 365px){
 .with-me-title-h{
   font-size: 38px;
+}
+
+.if-you-content{
+  height: 450px;
 }
 }

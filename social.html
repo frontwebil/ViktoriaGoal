@@ -1,66 +1,77 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psychology</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Psychology</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="anim.css" />
-  <link rel="stylesheet" href="main.css" />
-  <link rel="stylesheet" href="reset.css" />
-  <link rel="stylesheet" href="media.css" />
-  <link rel="stylesheet" href="standart.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="preloader.css" />
+    <link rel="stylesheet" href="anim.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="standart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-  <script src="main.js" defer></script>
 
-  <style>
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  </style>
-</head>
-<body>
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body id="home">
+    <div class="preloader">
+      <div class="preloader__row">
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+      </div>
+    </div>
 
-  <div class="pop_up" id="pop_up" style="z-index: 3;">
-    <div class="pop_up_container">
-      <div class="pop_up_body">
-        <div class="container-pop">
-          <div class="pop_up_top">
-            <p class="Pop-top-text">ПОДАТЬ ЗАЯВКУ</p>
-            <div style="cursor: pointer" id="close_pop_up">
-              <img src="icon/X.svg" alt="" />
+    <div class="pop_up" id="pop_up" style="z-index: 3">
+      <div class="pop_up_container">
+        <div class="pop_up_body">
+          <div class="container-pop">
+            <div class="pop_up_top">
+              <p class="Pop-top-text">ПОДАТЬ ЗАЯВКУ</p>
+              <div style="cursor: pointer" id="close_pop_up">
+                <img src="icon/X.svg" alt="" />
+              </div>
             </div>
-          </div>
-          <p class="pop-up-p-info">
-            Подайте заявку и получите быстрый ответ от автора
-          </p>
+            <p class="pop-up-p-info">
+              Подайте заявку и получите быстрый ответ от автора
+            </p>
 
-          <div class="form">
-            <p class="form-text">Имя</p>
-            <input type="text" class="input" id="name" />
-            <p class="form-text">E-mail</p>
-            <input type="text" class="input" id="gmail" />
-            <!-- <a
+            <div class="form">
+              <p class="form-text">Имя</p>
+              <input type="text" class="input" id="name" />
+              <p class="form-text">E-mail</p>
+              <input type="text" class="input" id="gmail" />
+              <!-- <a
                 class="button"
                 href="#"
                 id="Submit_letter"
@@ -68,163 +79,523 @@
                 style="max-width: 350px; padding: 18px 100px"
                 >ПОДАТЬ ЗАЯВКУ</a
               > -->
-            <a href="#" id="Submit_letter" onclick="getValue()">
-              <button class="redirect-button" style="margin-top: 10px;">
-                <p class="redirect-button-text">ПОДАТЬ ЗАЯВКУ</p>
+              <a href="#" id="Submit_letter" onclick="getValue()">
+                <button class="redirect-button" style="margin-top: 10px">
+                  <p class="redirect-button-text">ПОДАТЬ ЗАЯВКУ</p>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pop_up_end" id="pop_up_end">
+      <div class="pop_up_container">
+        <div class="pop_up_body">
+          <div class="container-pop" style="padding-bottom: 50px">
+            <h3 class="pop-end-h">СПАСИБО!</h3>
+            <p class="pop-end-p">
+              Ваша заявка была отправлена<br />
+              Ожидайте ответ от автора
+            </p>
+            <a href="index.html">
+              <button class="redirect-button">
+                <p class="redirect-button-text">НА ГЛАВНЫЙ ЭКРАН</p>
               </button>
             </a>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="pop_up_end" id="pop_up_end">
-    <div class="pop_up_container">
-      <div class="pop_up_body">
-        <div class="container-pop" style="padding-bottom: 50px">
-          <h3 class="pop-end-h">СПАСИБО!</h3>
-          <p class="pop-end-p">
-            Ваша заявка была отправлена<br />
-            Ожидайте ответ от автора
-          </p>
-          <a href="index.html">
-            <button class="redirect-button">
-              <p class="redirect-button-text">НА ГЛАВНЫЙ ЭКРАН</p>
-            </button>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <div class="main-container">
-
-    <header class="header" style="background-image: url(img/header-black.png);">
-      <div class="header-bottom">
-        <button id="burger-open"><img src="icon/List.svg" alt="" /></button>
-        <div class="header-bottom-right">
-          <img src="icon/Vector.svg" alt="" />
-          <div class="header-bottom-right-column">
-            <h3 class="header-text">УЮТНЫЙ БЛОГ</h3>
-            <p class="header-p">В INSTAGRAM</p>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <div class="menu" id="menu">
-      <div class="main-container">
-        <div class="header" style="background-image: none; background-color: #141414">
-          <div class="header-bottom">
-            <button id="burger-close"><img src="icon/Xc.svg" alt="" /></button>
-            <div class="header-bottom-right">
-              <img src="icon/Vector.svg" alt="" />
-              <div class="header-bottom-right-column">
-                <h3 class="header-text">УЮТНЫЙ БЛОГ</h3>
-                <p class="header-p">В INSTAGRAM</p>
-              </div>
+    <div class="main-container">
+      <header
+        class="header"
+        style="background-image: url(img/header-black.png)"
+      >
+        <div class="header-bottom">
+          <button id="burger-open"><img src="icon/List.svg" alt="" /></button>
+          <div class="header-bottom-right">
+            <img src="icon/Vector.svg" alt="" />
+            <div class="header-bottom-right-column">
+              <h3 class="header-text">УЮТНЫЙ БЛОГ</h3>
+              <p class="header-p">В INSTAGRAM</p>
             </div>
           </div>
         </div>
+      </header>
 
-        <div class="header-menu">
-          <div class="wrap-top">
-            <a href="index.html" class="adress">
-              <div class="text-menu" style="align-items: center;">
-                <h3 class="header-menu-wrap-h">
-                  ПСИХОЛОГИЯ
-                </h3>
-                <img src="icon/ArrowUp.svg" alt="" />
+      <div class="menu" id="menu">
+        <div class="main-container">
+          <div
+            class="header"
+            style="background-image: none; background-color: #141414"
+          >
+            <div class="header-bottom">
+              <button id="burger-close">
+                <img src="icon/Xc.svg" alt="" />
+              </button>
+              <div class="header-bottom-right">
+                <img src="icon/Vector.svg" alt="" />
+                <div class="header-bottom-right-column">
+                  <h3 class="header-text">УЮТНЫЙ БЛОГ</h3>
+                  <p class="header-p">В INSTAGRAM</p>
+                </div>
               </div>
-            </a>
-            <p class="header-menu-wrap-p">Психотерапия Курсы Вебинары</p>
+            </div>
           </div>
 
-          <div class="wrap-psych" style="align-items: center;">
-            <h3 class="wrap-psych-h">ЗАРАБОТОК В <br>
-              СОЦ. СЕТЯХ</h3>
-            <img src="icons-social/InstagramLogo.png" alt="" style="width: 44px;height: 44px;" />
-          </div>
+          <div class="header-menu">
+            <div class="wrap-top">
+              <a href="index.html" class="adress">
+                <div class="text-menu" style="align-items: center">
+                  <h3 class="header-menu-wrap-h">ПСИХОЛОГИЯ</h3>
+                  <img src="icon/ArrowUp.svg" alt="" />
+                </div>
+              </a>
+              <p class="header-menu-wrap-p">Психотерапия Курсы Вебинары</p>
+            </div>
 
-          <div class="menu-column">
+            <div class="wrap-psych" style="align-items: center">
+              <h3 class="wrap-psych-h">
+                ЗАРАБОТОК В <br />
+                СОЦ. СЕТЯХ
+              </h3>
+              <img
+                src="icons-social/InstagramLogo.png"
+                alt=""
+                style="width: 44px; height: 44px"
+              />
+            </div>
 
-            <a href="#before-after" class="menu-link">
-              <div class="column-item">
-                <p class="column-item-text">КУРС</p>
-                <p class="column-item-greyText">«Заработок из соц.сетей <br>
-                  через личный бренд»</p>
-              </div>
-            </a>
-            <a href="#before-after" class="menu-link">
-              <div class="column-item">
-                <p class="column-item-text">НАСТАВНИЧЕСТВО</p>
-              </div>
-            </a>
-            <a href="#before-after" class="menu-link">
-              <div class="column-item">
-                <p class="column-item-text">КОНСУЛЬТАЦИЯ</p>
-                <p class="column-item-greyText">Консультация по TikTok + Instagram <br>
-                  для успешного заработка  </p>
-              </div>
-            </a>
-            <a href="#before-after" class="menu-link">
-              <div class="column-item">
-                <p class="column-item-text">ОТЗЫВЫ</p>
-              </div>
-            </a>
+            <div class="menu-column">
+              <a href="#before-after" class="menu-link">
+                <div class="column-item">
+                  <p class="column-item-text">КУРС</p>
+                  <p class="column-item-greyText">
+                    «Заработок из соц.сетей <br />
+                    через личный бренд»
+                  </p>
+                </div>
+              </a>
+              <a href="#before-after" class="menu-link">
+                <div class="column-item">
+                  <p class="column-item-text">НАСТАВНИЧЕСТВО</p>
+                </div>
+              </a>
+              <a href="#before-after" class="menu-link">
+                <div class="column-item">
+                  <p class="column-item-text">КОНСУЛЬТАЦИЯ</p>
+                  <p class="column-item-greyText">
+                    Консультация по TikTok + Instagram <br />
+                    для успешного заработка
+                  </p>
+                </div>
+              </a>
+              <a href="#before-after" class="menu-link">
+                <div class="column-item">
+                  <p class="column-item-text">ОТЗЫВЫ</p>
+                </div>
+              </a>
 
-            <a href="#contacts" class="menu-link">
-              <div class="column-item">
-                <p class="column-item-text">КОНТАКТЫ</p>
-              </div>
-            </a>
-
+              <a href="#contacts" class="menu-link">
+                <div class="column-item">
+                  <p class="column-item-text">КОНТАКТЫ</p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <section class="container-vik-social">
+      <section
+        class="container-vik-social"
+        style="background-image: url(img/social-viktoria.jpg)"
+      >
+        <div class="container-vik-social-header">
+          <h2 style="white-space: nowrap">
+            ЗАРАБОТОК<br />
+            В СОЦ. СЕТЯХ
+          </h2>
+          <div class="viktoria-line"></div>
+        </div>
 
-      <div class="container-vik-social-header">
-        <h2 style="white-space: nowrap;">ЗАРАБОТОК<br>
-          В СОЦ. СЕТЯХ</h2>
-        <div class="viktoria-line"></div>
-      </div>
+        <div class="container-vik-social-content">
+          <p class="container-vik-social-content-text">
+            Наставничество, обучение по личному бренду, заработку в соц.сетях
+            Instagram + TikTok, курс «Зароботок из соц. сетей через личный
+            бренд»
+          </p>
 
-      <div class="container-vik-social-content">
-        <p class="container-vik-social-content-text">Наставничество, обучение по личному бренду, заработку в соц.сетях Instagram + TikTok, курс «Зароботок из соц. сетей через личный бренд»</p>
+          <button
+            class="redirect-button"
+            style="margin-top: 10px; margin-bottom: 15px"
+          >
+            <p class="redirect-button-text open_pop_up">
+              ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ
+            </p>
+          </button>
+        </div>
+      </section>
+
+      <section class="consultation-tiktioInst">
+        <h2 class="consultation-tiktioInst-title">КОНСУЛЬТАЦИЯ</h2>
+        <p class="consultation-tiktioInst-text">
+          Консультация по TikTok + Instagram для успешного заработка
+        </p>
+
+        <div class="consultation-tiktioInst-block-price">
+          <p class="consultation-tiktioInst-block-price-time">2 - 3 часа</p>
+          <h3 class="consultation-tiktioInst-block-price-title">
+            / / ДЛЯ ЛИЧНОГО БЛОГ / БИЗНЕСА
+          </h3>
+          <h3 class="consultation-tiktioInst-block-price-undertext">
+            ЧТО БУДЕТ
+          </h3>
+
+          <ul
+            class="columns"
+            style="margin-top: 16px; padding-left: 20px; column-gap: 30px"
+          >
+            <li class="column-li">
+              <p class="column-li-text" style="color: #d9d9d9">
+                Разберём все ваши запросы для будущего успеха
+              </p>
+            </li>
+            <li class="column-li">
+              <p class="column-li-text" style="color: #d9d9d9">
+                Сделаем глубокую распаковку вашей личности
+              </p>
+            </li>
+            <li class="column-li">
+              <p class="column-li-text" style="color: #d9d9d9">
+                Создадим план продвижения и план выхода на доход х2-х3
+              </p>
+            </li>
+            <li class="column-li">
+              <p class="column-li-text" style="color: #d9d9d9">
+                Составим план постинга всего в соц. сетях
+              </p>
+            </li>
+            <li class="column-li">
+              <p class="column-li-text" style="color: #d9d9d9">
+                Определим вашу нишу
+              </p>
+            </li>
+            <li class="column-li">
+              <p class="column-li-text" style="color: #d9d9d9">
+                Поменяем айдентику, визуал
+              </p>
+            </li>
+            <li class="column-li">
+              <p class="column-li-text" style="color: #d9d9d9">
+                Сделаем план вашего продвижения
+              </p>
+            </li>
+            <li class="column-li">
+              <p class="column-li-text" style="color: #d9d9d9">
+                Создадим идею курса, превратим в план
+              </p>
+            </li>
+          </ul>
+
+          <div
+            class="way-personality-course-menu-block-bottom"
+            style="padding: 15px 5px"
+          >
+            <p class="way-personality-course-menu-block-bottom-text">Цена</p>
+            <p class="way-personality-course-menu-block-bottom-price">115€</p>
+          </div>
+
+          <button class="redirect-button open_pop_up" style="margin-top: 20px">
+            <p class="redirect-button-text">ЗАПИСАТЬСЯ</p>
+          </button>
+        </div>
+      </section>
+
+      <section class="three-photos" style="margin-bottom: 60px">
+        <div
+          class="three-photos-flex"
+          style="
+            display: flex;
+            justify-content: space-between;
+            max-width: 400px;
+            gap: 16px;
+          "
+        >
+          <div
+            class="three-photo"
+            style="background-image: url(img-social/three-photo-left.png)"
+          ></div>
+          <div
+            class="three-photo"
+            style="background-image: url(img-social/three-photo-rightjpg.jpg)"
+          ></div>
+        </div>
+      </section>
+
+      <section
+        class="premium-product-info"
+        style="margin-top: -145px; padding-top: 125px"
+      >
+        <p class="premium-product-grey-text" style="margin-bottom: 5px">КУРС</p>
+        <h2 class="premium-product-info-title" style="margin-bottom: 20px">
+          «ЗАРАБОТОК ИЗ СОЦ. СЕТЕЙ<br />
+          ЧЕРЕЗ ЛИЧНЫЙ БРЕНД»
+        </h2>
+        <div class="line" style="margin-bottom: 30px"></div>
+
+        <div class="premium-product-info-cards">
+          <div class="premium-product-info-card">
+            <h3 class="premium-product-info-card-title">2 МЕСЯЦА</h3>
+            <p class="premium-product-info-card-text">глубокого обучения</p>
+          </div>
+
+          <div class="premium-product-info-card">
+            <h3 class="premium-product-info-card-title">5 МОДУЛЕЙ</h3>
+            <p class="premium-product-info-card-text">с лучшей программой</p>
+          </div>
+
+          <div class="premium-product-info-card">
+            <h3 class="premium-product-info-card-title">25+ УРОКОВ</h3>
+            <p class="premium-product-info-card-text">
+              с чёткой и понятной<br />
+              информацией
+            </p>
+          </div>
+
+          <div class="premium-product-info-card">
+            <h3 class="premium-product-info-card-title">24/7 СВЯЗЬ</h3>
+            <p class="premium-product-info-card-text">
+              со мной<br />
+              и куратором
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="if-you">
+        <p class="if-you-title">ЕСЛИ ВЫ...</p>
+
+        <div class="if-you-content"></div>
+
+        <p class="if-you-footer">
+          Построю для вас программу обучения так, что вы профессионально с 0
+          обучитесь SMM и возьмёте свой первый заказ.
+        </p>
+      </section>
+
+      <section class="trust-me">
+        <div class="trust-me-title">МНЕ ДОВЕРЯЮТ</div>
+
+        <div class="trust-me-block">
+          <ul
+            class="way-personality-course-menu-block-list"
+            style="max-width: 220px"
+          >
+            <li
+              class="way-personality-course-menu-block-list-item"
+              style="white-space: nowrap; z-index: 1"
+            >
+              Сотни успешных<br />
+              клиентов по всему миру,<br />
+              которые живут новую<br />
+              здоровую и успешную
+            </li>
+            <li
+              class="way-personality-course-menu-block-list-item"
+              style="white-space: nowrap; z-index: 1"
+            >
+              С 0 смогу научить<br />
+              любого зарабатывать с<br />
+              соц сетей от 1-2.000$\<br />месяц
+            </li>
+            <li
+              class="way-personality-course-menu-block-list-item"
+              style="white-space: nowrap; z-index: 1"
+            >
+              Заработала более <br />
+              50.000€ с соц.сетей
+            </li>
+            <li
+              class="way-personality-course-menu-block-list-item"
+              style="white-space: nowrap; z-index: 1"
+            >
+              5 лет успешно обучаю<br />
+              людей всем этим<br />
+              навыкам
+            </li>
+            <li
+              class="way-personality-course-menu-block-list-item"
+              style="white-space: nowrap; z-index: 1"
+            >
+              Легко открываю<br />
+              бизнесы, которые мне<br />
+              нравятся
+            </li>
+          </ul>
+          <img src="img-social/Frame 534.png" alt="" class="block-img" />
+        </div>
+      </section>
+
+      <section class="tarrifs">
+        <h2 class="tarrifs-title">ТАРИФЫ</h2>
+
+        <div class="tarrifs-block">
+          <div class="tarrifs-block-item">
+            <p class="tarrifs-block-item-text">/ С ОБРАТНОЙ СВЯЗЬЮ</p>
+            <p class="tarrifs-block-item-price">599€</p>
+          </div>
+
+          <div class="tarrifs-block-item">
+            <p class="tarrifs-block-item-text">/ БЕЗ ОБРАТНОЙ СВЯЗИ</p>
+            <p class="tarrifs-block-item-price">499€</p>
+          </div>
+
+          <button class="redirect-button open_pop_up" style="margin-top: 0">
+            <p class="redirect-button-text">ЗАПИСАТЬСЯ</p>
+          </button>
+        </div>
+        <div class="row-line-white">
+          <img src="icon/left-white.svg" alt="" />
+          <img src="icon/center-white.svg" alt="" />
+          <img src="icon/right-white.svg" alt="" />
+        </div>
+      </section>
+
+      <section class="program-course">
+        <div class="program-course-photo"></div>
+
+        <h3 class="program-course-title">ПРОГРАМА КУРСА</h3>
+
+        <div class="accordeon">
+
+          <div class="accordeon-item">
+            <div class="accordeon-top-button-white">
+              <div class="accordeon-top-button-left">
+                <p class="accordeon-top-button-left-number">01.</p>
+                <p class="accordeon-top-button-left-text" style="color: #f6f5f5;">МОДУЛЬ «Основы <br>
+                  Личного Брендинга»</p>
+              </div>
+              <img src="icon/Plus-white.svg" alt="" class="accordeon-img">
+            </div>
+            <div class="accordeon-content" style="padding-left: 40px;">
+              <p class="accordeon-content-text" style="color: #f6f5f5;font-weight: 600;margin-top: 10px;"> <span
+                  style="color: #606060;">Блок 1.</span> Введение в Личный Бренд</p>
+              <p class="accordeon-content-text" style="color: #f6f5f5;font-weight: 600;margin-top: 10px;"> <span
+                  style="color: #606060;">Блок 2.</span> Истории успеха</p>
+              <p class="accordeon-content-text" style="color: #f6f5f5;font-weight: 600;margin-top: 10px;"> <span
+                  style="color: #606060;">Блок 3.</span> Самоанализ</p>
+            </div>
+          </div>
+    
+          <div class="accordeon-item">
+            <div class="accordeon-top-button-white">
+              <div class="accordeon-top-button-left">
+                <p class="accordeon-top-button-left-number">02.</p>
+                <p class="accordeon-top-button-left-text" style="color: #f6f5f5;">МОДУЛЬ «Стратегия <br>
+                  Развития Личного Бренда»</p>
+              </div>
+              <img src="icon/Plus-white.svg" alt="" class="accordeon-img">
+            </div>
+            <div class="accordeon-content" style="padding-left: 40px;">
+              <p class="accordeon-content-text" style="color: #f6f5f5;font-weight: 600;margin-top: 10px;"> <span
+                  style="color: #606060;">Блок 4.</span> Целеполагание</p>
+              <p class="accordeon-content-text" style="color: #f6f5f5;font-weight: 600;margin-top: 10px;"> <span
+                  style="color: #606060;">Блок 5.</span> Аудитория</p>
+              <p class="accordeon-content-text" style="color: #f6f5f5;font-weight: 600;margin-top: 10px;"> <span
+                  style="color: #606060;">Блок 6.</span> Визуальная идентичность</p>
+              <p class="accordeon-content-text" style="color: #f6f5f5;font-weight: 600;margin-top: 10px;"> <span
+                  style="color: #606060;">Блок 7.</span> Социальные Сети</p>
+              <p class="accordeon-content-text" style="color: #f6f5f5;font-weight: 600;margin-top: 10px;"> <span
+                  style="color: #606060;">Блок 8.</span> Контент-стратегия</p>
+              <p class="accordeon-content-text" style="color: #f6f5f5;font-weight: 600;margin-top: 10px;"> <span
+                  style="color: #606060;">Блок 9.</span> Сетевое Взаимодействие 
+                  и Рост</p>
+            </div>
+          </div>
+    
+          <div class="accordeon-item">
+            <div class="accordeon-top-button-white">
+              <div class="accordeon-top-button-left">
+                <p class="accordeon-top-button-left-number">03.</p>
+                <p class="accordeon-top-button-left-text" style="color: #f6f5f5;">МОДУЛЬ «Управление <br>
+                  Репутацией и <br>
+                  Персональный PR»</p>
+              </div>
+              <img src="icon/Plus-white.svg" alt="" class="accordeon-img">
+            </div>
+            <div class="accordeon-content" style="padding-left: 40px;">
+              <p class="accordeon-content-text" style="color: #f6f5f5;font-weight: 600;margin-top: 10px;">
+                -Важность отзывов и рекомендаций.<br><br>
+                -Способы управления отзывами в интернете.<br><br>
+                -Разработка PR-стратегии для личного бренда.<br><br>
+                -Сотрудничество с СМИ и блогерами.</p>
+            </div>
+          </div>
+    
+          <div class="accordeon-item">
+            <div class="accordeon-top-button-white">
+              <div class="accordeon-top-button-left">
+                <p class="accordeon-top-button-left-number">04.</p>
+                <p class="accordeon-top-button-left-text" style="color: #f6f5f5;">МОДУЛЬ «Монетизация <br>
+                  Личного Бренда»</p>
+              </div>
+              <img src="icon/Plus-white.svg" alt="" class="accordeon-img">
+            </div>
+            <div class="accordeon-content" style="padding-left: 40px;">
+              <p class="accordeon-content-text" style="color: #f6f5f5;font-weight: 600;margin-top: 10px;"> <span
+                  style="color: #606060;">Блок 10.</span> Монетизационные стратегии</p>
+              <p class="accordeon-content-text" style="color: #f6f5f5;font-weight: 600;margin-top: 10px;"> <span
+                  style="color: #606060;">Блок 11.</span> Создание продуктов и услуг</p>
+              <p class="accordeon-content-text" style="color: #f6f5f5;font-weight: 600;margin-top: 10px;"> <span
+                  style="color: #606060;">Блок 12.</span> Сотрудничество с брендами</p>
+
+                книги, фильмы</p>
+            </div>
+          </div>
+    
+          <div class="accordeon-item">
+            <div class="accordeon-top-button-white">
+              <div class="accordeon-top-button-left">
+                <p class="accordeon-top-button-left-number">05.</p>
+                <p class="accordeon-top-button-left-text" style="color: #f6f5f5;">МОДУЛЬ «Заключение <br>
+                  и Финальный Проект»</p>
+              </div>
+              <img src="icon/Plus-white.svg" alt="" class="accordeon-img">
+            </div>
+            <div class="accordeon-content" style="padding-left: 40px;">
+              <p class="accordeon-content-text" style="color: #f6f5f5;font-weight: 600;margin-top: 10px;"> <span
+                  style="color: #606060;">Блок 13.</span> Составление индивидуального плана развития</p><br>
+              <span style="color: #606060;">Финальный проект</span>
+              <p class="accordeon-content-text" style="color: #f6f5f5;font-weight: 600;margin-top: 10px;">Разработка и представление комплексного проекта по созданию и продвижению личного бренда, включая стратегию, визуальную идентичность, контент-план и план монетизации.
+
+                Заработок</p>
+
+                книги, фильмы</p>
+            </div>
+          </div>
+    
 
 
-        <button class="redirect-button" style="margin-top: 10px;margin-bottom: 15px;">
-          <p class="redirect-button-text open_pop_up">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</p>
-        </button>
-      </div>
-    </section>
 
-    <section class="consultation-tiktioInst">
-      <h2 class="consultation-tiktioInst-title">КОНСУЛЬТАЦИЯ</h2>
-      <p class="consultation-tiktioInst-title">Консультация по TikTok + Instagram для успешного заработка  </p>
-    </section>
 
     
-  </div>
+        </div>
 
 
+      </section>
 
+      <section class="wrap-photo">
 
+      </section>
 
+    </div>
+    <script>
 
-
-
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-</body>
+    </script>
+    <script src="mainSocial.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
 </html>

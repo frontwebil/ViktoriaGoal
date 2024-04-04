@@ -241,7 +241,6 @@ body {
 }
 .wrap-psych-h {
   font-size: 26px;
-  font-family: MakExtraBold;
 }
 
 .column-item {
@@ -1667,7 +1666,6 @@ body {
 .container-vik-social {
   margin-top: 85px;
   padding: 30px 16px 20px 16px;
-  background-image: url(img/social-viktoria.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1700,4 +1698,185 @@ body {
   font-weight: 500;
   color: #606060;
   padding-left: 10px;
+}
+
+.consultation-tiktioInst {
+  padding: 60px 16px;
+  background-color: #141414;
+}
+.consultation-tiktioInst-title {
+  font-family: MakSemibold;
+  font-size: 42px;
+  font-weight: 600;
+}
+.consultation-tiktioInst-text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.consultation-tiktioInst-block-price {
+  padding: 14px;
+  border: 1px white solid;
+  margin-top: 20px;
+}
+.consultation-tiktioInst-block-price-time {
+  font-size: 14px;
+  font-weight: 400;
+  color: #606060;
+
+}
+.consultation-tiktioInst-block-price-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #f6f5f5;
+  margin-bottom: 15px;
+}
+.consultation-tiktioInst-block-price-undertext {
+  font-size: 18px;
+  font-weight: 600;
+  color: #CCCCCC;
+}
+
+
+.three-photos {
+  padding: 20px 16px;
+  background-color: #141414;
+}
+
+
+
+.three-photo{
+  height: 364px;
+  width: 192px;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.premium-product-info-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.line {
+  width: 80px;
+  height: 1px;
+  background-color: #f6f5f5;
+}
+
+
+.if-you {
+  background-color: #141414;
+  padding: 30px 16px;
+  max-width: 430px;
+}
+.if-you-title {
+font-family: MakSemiBold;
+font-size: 26px;
+font-weight: 800;
+padding-left: 10px;
+
+
+}
+.if-you-content {
+  background-image: url(img-social/if-you-content.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.if-you-footer{
+font-size: 16px;
+font-weight: 500;
+margin-top: 60px;
+}
+
+.trust-me {
+  padding: 60px 16px;
+  background: #141414;
+}
+.trust-me-title {
+  font-family: MakSemiBold;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  
+}
+.trust-me-block {
+  padding: 13px;
+  border: 1px white solid;
+  display: flex;
+  position: relative;
+
+}
+
+.block-img{
+  position: absolute;
+  right: -15px;
+  top: -13px;
+  width: 169px;
+  height: 380px;
+}
+
+
+.tarrifs {
+  padding: 0px 16px 30px 16px;
+  background-color: #141414;
+}
+.tarrifs-title {
+font-size: 20px;
+font-weight: 700;
+
+}
+.tarrifs-block {
+  padding: 20px 14px;
+  border: 1px white solid;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.tarrifs-block-item {
+  display: flex;
+  justify-content: space-between;
+}
+.tarrifs-block-item-text {
+font-size: 20px;
+font-weight: 500;
+
+}
+.tarrifs-block-item-price {
+font-size: 20px;
+font-weight: 700;
+text-decoration: underline;
+
+}
+
+.program-course {
+  padding: 60px 16px;
+  background-color: #141414;
+}
+.program-course-photo {
+  background-image: url(img-social/program-course.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 240px;
+}
+.program-course-title {
+font-size: 18px;
+font-weight: 500;
+color: #f6f5f5;
+margin-top: 30px;
+padding-bottom: 30px;
+border-bottom: 1px solid white;
+}
+
+.wrap-photo{
+  background-image: url(img-social/wpar-photo.png);
+  width: 100%;
+  height: 112px;
+  background-color: #141414;
+  background-position: center;
+  background-size: cover;
 }
