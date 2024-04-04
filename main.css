@@ -10,8 +10,6 @@
     url("fonts/MakExtraBold/font.woff2") format("woff2");
 }
 
-
-
 html {
   scroll-behavior: smooth;
 }
@@ -205,9 +203,9 @@ body {
 }
 
 .header-menu-wrap-h {
-  font-family: MakExtraBold;
   color: #f6f5f5;
-  font-size: 26px;
+  font-size: 30px;
+  font-weight: 600;
 }
 .header-menu-wrap-p {
   font-size: 16px;
@@ -280,7 +278,6 @@ body {
   width: 100%;
   top: 0;
 
-  
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -865,7 +862,6 @@ body {
 }
 
 .my-product-video-veb {
-  
   margin-top: 15px;
 }
 
@@ -1705,5 +1701,3 @@ body {
   color: #606060;
   padding-left: 10px;
 }
-
-
