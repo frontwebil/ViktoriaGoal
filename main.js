@@ -298,6 +298,7 @@ beforeAfterBtn.onclick = function () {
 
   const home = document.getElementById('home')
 
+  
   document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add('loaded');
   });
