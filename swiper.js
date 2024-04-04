@@ -21,3 +21,27 @@ var swiperUnder = new Swiper(".mySwiper-under", {
     prevEl: ".custom-prev-under",
   },
 });
+
+var swiper = new Swiper(".clients-succesess-swiper", {
+  pagination: {
+    el: ".slider-controls-paginations-clients-success",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".custom-next-clients-success",
+    prevEl: ".custom-prev-clients-success",
+  },
+  allowTouchMove: false,
+
+});
+
+var swiper = new Swiper(".clients-succesess-swiper-innerSwiper", {
+  spaceBetween: 20,
+  slidesPerView: 1,
+
+  allowTouchMove: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
