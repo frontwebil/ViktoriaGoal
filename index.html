@@ -5,18 +5,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Psychology</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="main.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="reset.css"/>
     <link rel="stylesheet" href="standart.css">
-    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="media.css"/>
   <link rel="stylesheet" href="anim.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+  
   <script src="main.js" defer></script>
-
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <style>
     .swiper {
       width: 100%;
@@ -41,62 +40,7 @@
 </head>
 
 <body id="home">
-  <div class="pop_up" id="pop_up" style="z-index: 3;">
-    <div class="pop_up_container">
-      <div class="pop_up_body">
-        <div class="container-pop">
-          <div class="pop_up_top">
-            <p class="Pop-top-text">ПОДАТЬ ЗАЯВКУ</p>
-            <div style="cursor: pointer" id="close_pop_up">
-              <img src="icon/X.svg" alt="" />
-            </div>
-          </div>
-          <p class="pop-up-p-info">
-            Подайте заявку и получите быстрый ответ от автора
-          </p>
 
-          <div class="form">
-            <p class="form-text">Имя</p>
-            <input type="text" class="input" id="name" />
-            <p class="form-text">E-mail</p>
-            <input type="text" class="input" id="gmail" />
-            <!-- <a
-                class="button"
-                href="#"
-                id="Submit_letter"
-                onclick="getValue()"
-                style="max-width: 350px; padding: 18px 100px"
-                >ПОДАТЬ ЗАЯВКУ</a
-              > -->
-            <a href="#" id="Submit_letter" onclick="getValue()">
-              <button class="redirect-button" style="margin-top: 10px;">
-                <p class="redirect-button-text">ПОДАТЬ ЗАЯВКУ</p>
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="pop_up_end" id="pop_up_end">
-    <div class="pop_up_container">
-      <div class="pop_up_body">
-        <div class="container-pop" style="padding-bottom: 50px">
-          <h3 class="pop-end-h">СПАСИБО!</h3>
-          <p class="pop-end-p">
-            Ваша заявка была отправлена<br />
-            Ожидайте ответ от автора
-          </p>
-          <a href="index.html">
-            <button class="redirect-button">
-              <p class="redirect-button-text">НА ГЛАВНЫЙ ЭКРАН</p>
-            </button>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- <div class=" all"> -->
   <div class="main-container">
@@ -214,7 +158,7 @@
           <p class="vik-top-text">КОУЧ</p>
           <p class="vik-top-text" style="border-right: 0">НАСТАВНИК</p>
         </div>
-        <h1 class="vik-title leftToRight">
+        <h1 class="vik-title">
           ВИКТОРИЯ <br />
           ГОАЛ
         </h1>
@@ -223,11 +167,6 @@
             Я — психолог, business-woman, автор онлайн продуктов, провожу
             обучения по личному бренду и заработку в соц сетях.
           </p>
-          <!-- <a href="" class="button-modal" id="open_pop_up"
-              >ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</a
-            > -->
-
-
           <button class="redirect-button" style="margin-top: 10px;margin-bottom: 60px;">
             <p class="redirect-button-text open_pop_up">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</p>
           </button>
@@ -335,10 +274,8 @@
     <section class="about">
       <div class="container-about">
         <div class="about-top">
-          <h3 class="about-text leftToRight"">ОБО МНЕ</h3>
+          <h3 class="about-text leftToRight">ОБО МНЕ</h3>
             
-            <!-- <div class=" line-black">
-        </div> -->
         <img src="icon/vect.svg" alt="" style="position: relative;right: -40px;" />
 
       </div>
@@ -417,24 +354,14 @@
           </div>
         </div>
 
-        <div class="wrap-about-right">
-          <!-- <img
-                src="img/right.jpg"
-                alt=""
-                style="object-fit: cover; width: 100%"
-                class="about-img"
-              /> -->
+        <div rel="preload" class="wrap-about-right" style="background-image: url(img/right.jpg);">
+
         </div>
       </div>
 
       <div class="wrap-about" style="padding-bottom: 60px">
-        <div class="wrap-about-right" style="background-image: url(img/leftTest.jpg);">
-          <!-- <img
-                src="img/left.jpg"
-                alt=""
-                style="object-fit: cover; width: 191px"
-                class="about-img"
-              /> -->
+        <div rel="preload" class="wrap-about-right" style="background-image: url(img/leftTest.jpg);">
+
         </div>
 
         <div class="wrap-about-left">
@@ -587,30 +514,6 @@
 
       <div class="services-block-first-columns" style="padding-left: 15px;">
 
-        <!-- <ul class="services-block-first-column" style="list-style-type: disc;color: #892B28;">
-          <li style="list-style-type: disc;">
-            <p class="services-block-first-column-text">Вы получите ответы на все свои вопросы. </p>
-          </li>
-          <li style="list-style-type: disc;">
-            <p class="services-block-first-column-text">Узнаете, какие корни тех или иных проблем в вашей жизни.</p>
-          </li>
-          <li style="list-style-type: disc;">
-            <p class="services-block-first-column-text">Я объясню вам причинно следственную связь о вашей жизни.</p>
-          </li>
-        </ul>
-
-        <ul class="services-block-first-column" style="list-style-type: disc;color: #892B28;">
-          <li style="list-style-type: disc;">
-            <p class="services-block-first-column-text">Вы получите ответы на все свои вопросы. </p>
-          </li>
-          <li style="list-style-type: disc;">
-            <p class="services-block-first-column-text">Узнаете, какие корни тех или иных проблем в вашей жизни.</p>
-          </li>
-          <li style="list-style-type: disc;">
-            <p class="services-block-first-column-text">Я объясню вам причинно следственную связь о вашей жизни.</p>
-          </li>
-        </ul>
-         -->
         <ul class="services-block-first-column" style="list-style-type: disc;color: #892B28;">
           <li style="list-style-type: disc;">
             <p class="services-block-first-column-text">Вы получите ответы на <b>все свои вопросы. </b></p>
@@ -724,9 +627,6 @@
     <div class="my-product-video-veb blight">
       <video src="video/vebinar-my-product.mp4" controls style="width: 100%;height: 301px;" poster="video/poster-vebinar.jpg"></video>
     </div>
-      
-    <!-- <iframe style="margin-top: 20px;" width="100%" height="310" src="https://www.youtube.com/embed/goCNmWfWWbU?si=LaD-LM6ZXZR4bu2U" title="Вебинар 'Колесо Баланса'" frameborder="0" allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-
 
     <div class="line-bot" style="padding-bottom: 26px;margin-top: 45px;">
       <img src="icon/left.svg" alt="" />
@@ -2423,6 +2323,66 @@
 
   </div>
   <!-- </div> -->
+
+  <div class="pop_up" id="pop_up" style="z-index: 3;">
+    <div class="pop_up_container">
+      <div class="pop_up_body">
+        <div class="container-pop">
+          <div class="pop_up_top">
+            <p class="Pop-top-text">ПОДАТЬ ЗАЯВКУ</p>
+            <div style="cursor: pointer" id="close_pop_up">
+              <img src="icon/X.svg" alt="" />
+            </div>
+          </div>
+          <p class="pop-up-p-info">
+            Подайте заявку и получите быстрый ответ от автора
+          </p>
+
+          <div class="form">
+            <p class="form-text">Имя</p>
+            <input type="text" class="input" id="name" />
+            <p class="form-text">E-mail</p>
+            <input type="text" class="input" id="gmail" />
+            <!-- <a
+                class="button"
+                href="#"
+                id="Submit_letter"
+                onclick="getValue()"
+                style="max-width: 350px; padding: 18px 100px"
+                >ПОДАТЬ ЗАЯВКУ</a
+              > -->
+            <a href="#" id="Submit_letter" onclick="getValue()">
+              <button class="redirect-button" style="margin-top: 10px;">
+                <p class="redirect-button-text">ПОДАТЬ ЗАЯВКУ</p>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pop_up_end" id="pop_up_end" style="z-index: 3;"> 
+    <div class="pop_up_container">
+      <div class="pop_up_body">
+        <div class="container-pop" style="padding-bottom: 50px">
+          <h3 class="pop-end-h">СПАСИБО!</h3>
+          <p class="pop-end-p">
+            Ваша заявка была отправлена<br />
+            Ожидайте ответ от автора
+          </p>
+          <a href="index.html">
+            <button class="redirect-button">
+              <p class="redirect-button-text">НА ГЛАВНЫЙ ЭКРАН</p>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="swiper.js"></script>
 </body>
