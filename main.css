@@ -1,16 +1,4 @@
-@font-face {
-  font-family: MakSemiBold;
-  src: url("fonts/MakSemiBoldHigh/font.woff") format("woff"),
-    url("fonts/MakSemiBoldHigh/font.woff2") format("woff2");
-  /* Add additional src declarations for different font file formats if necessary */
-}
 
-@font-face {
-  font-family: MakExtraBold;
-  src: url("fonts/MakExtraBold/font.woff") format("woff"),
-    url("fonts/MakExtraBold/font.woff2") format("woff2");
-  /* Add additional src declarations for different font file formats if necessary */
-}
 
 html {
   scroll-behavior: smooth;
@@ -1707,3 +1695,5 @@ body {
   color: #606060;
   padding-left: 10px;
 }
+
+

@@ -1,0 +1,11 @@
+@font-face {
+  font-family: MakSemiBold;
+  src: url("fonts/MakSemiBoldHigh/font.woff") format("woff"),
+    url("fonts/MakSemiBoldHigh/font.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: MakExtraBold;
+  src: url("fonts/MakExtraBold/font.woff") format("woff"),
+    url("fonts/MakExtraBold/font.woff2") format("woff2");
+}
