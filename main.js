@@ -296,14 +296,12 @@ beforeAfterBtn.onclick = function () {
   mainSlider.style.display = 'block';
 }
 
-  const home = document.getElementById('home')
-
   
+
+// ONLOAD
+
   document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add('loaded');
   });
 
 
-  home.onload = function(){
-    console.log('aboba')
-  }
