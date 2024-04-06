@@ -1979,14 +1979,11 @@ body {
   margin-top: 20px;
 }
 
-
-
 .main-mentoring-list-item {
-  list-style-type:disc;
+  list-style-type: disc;
   padding-top: 10px;
   padding-bottom: 14px;
   margin-left: 30px;
-
 }
 
 .mentoring-row-content {
@@ -2004,8 +2001,8 @@ body {
 }
 .mentoring-row-content-text {
   font-family: MakSemiBold;
-font-size: 18px;
-font-weight: 400;
+  font-size: 18px;
+  font-weight: 400;
 }
 .mentoring-row-content-text-list {
   display: flex;
@@ -2015,11 +2012,59 @@ font-weight: 400;
 .mentoring-row-content-text-item {
   list-style-type: disc;
   margin-left: 13px;
-
 }
 
 .mentoring-main-text-info {
-font-size: 16px;
-font-weight: 400;
-margin-top: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 14px;
 }
+
+.example-w-wo {
+  padding: 30px 16px;
+  background-color: #141414;
+}
+
+.example-w-wo-header {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 14px;
+  background-color: #892b28;
+}
+.example-w-wo-title {
+  font-size: 19px;
+  font-weight: 600;
+  color: #141414;
+  margin-top: 10px;
+}
+.example-w-wo-text {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #141414;
+}
+.example-w-wo-bottom-text {
+font-size: 18px;
+font-weight: 600;
+color: #141414;
+
+}
+
+
+
+
+.star-drop-down-left {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -16px;
+  left: -20px;
+}
+.star-drop-down-right {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -16px;
+  right: -20px;
+}
+
