@@ -297,6 +297,6 @@ AccordeonTopButtonWhite.forEach((el) => {
 
 // ONLOAD
 
-document.addEventListener("onload", () => {
+window.onload = () => {
   document.body.classList.add("loaded");
-});
+};
