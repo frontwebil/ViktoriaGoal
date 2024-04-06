@@ -300,8 +300,10 @@ beforeAfterBtn.onclick = function () {
 
 // ONLOAD
 
-  document.addEventListener("DOMContentLoaded", () => {
-    document.body.classList.add('loaded');
-  });
+  // document.addEventListener("DOMContentLoaded", () => {
+  //   document.body.classList.add('loaded');
+  // });
 
-
+  window.onload = () => {
+    document.body.classList.add("loaded");
+  };
