@@ -1349,7 +1349,7 @@ body {
 .way-personality-course-menu-block-bottom-price {
   font-size: 20px;
   font-weight: 700;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 /* END WAY */
 
@@ -1484,9 +1484,7 @@ body {
   height: 32px;
 }
 
-#mySwiperUnder {
-  display: none;
-}
+
 
 .clients-succesess {
   padding: 0px 16px 40px 16px;
